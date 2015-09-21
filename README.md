@@ -6,7 +6,13 @@ Pattern library and guidelines that power Intuo.
 
 ```ruby
 gem install middleman
+```
+
+```ruby
 bundle install
+```
+
+```ruby
 bower install
 ```
 
