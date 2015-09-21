@@ -2,7 +2,7 @@
   "name": "brandbook",
   "version": "0.1.0",
   "homepage": "https://github.com/intuo/brandbook",
-  "description": "Pattern library and guidelines that power Intuo",
+  "description": "Intuo design pattern library and guidelines.",
   "moduleType": [
     "globals"
   ],

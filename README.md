@@ -1,6 +1,6 @@
 # Brandbook
 
-Pattern library and guidelines that power Intuo.
+Intuo design pattern library and guidelines.
 
 ## Installation
 
