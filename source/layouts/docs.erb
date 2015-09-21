@@ -12,7 +12,13 @@
 
   <body>
     <%= partial "partials/navigation" %>
-    <%= yield %>
+
+    <main class="main" role="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
     <%= partial "partials/footer" %>
 
     <%= javascript_include_tag "jquery/dist/jquery.js" %>

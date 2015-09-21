@@ -3,8 +3,16 @@
 // --------------------------------------------------
 
 .logo {
-  &.is-small .logo-symbol { transform: scale(.5); }
   &.is-large .logo-symbol { transform: scale(1.2); }
+
+  &.is-small {
+    .logo-symbol { transform: scale(.3); }
+
+    .logo-text {
+      margin: -3px 0 0 -20px;
+      font-size: 22px;
+    }
+  }
 
   &.is-medium {
     .logo-symbol { transform: scale(.45); }
