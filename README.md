@@ -4,7 +4,7 @@ Pattern library and guidelines that power Intuo.
 
 ## Installation
 
-Install Middleman:
+Install Middleman
 ```
 gem install middleman
 ```
