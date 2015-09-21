@@ -17,5 +17,6 @@ $ middleman server
 ## Deploy
 
 ```
-$ middleman deploy [--build-before]
+$ rake build
+$ rake publish
 ```
