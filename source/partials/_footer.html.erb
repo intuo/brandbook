@@ -1,1 +1,23 @@
-footer
+<footer class="footer" role="footer">
+  <div class="container">
+    <div class="footer-information">
+      <p>Copyright <%= link_to "Intuo", "https://intuo.io" %> <%= Time.now.year %></p>
+      <p>Created and maintained by the <%= link_to "Intuo team", "https://github.com/intuo/brandbook/graphs/contributors" %>.</p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li>
+          <% link_to "https://twitter.com/intuolearn" do %>
+            <span class="ion-social-twitter"></span> intuolearn
+          <% end %>
+        </li>
+        <li>
+          <% link_to "https://github.com/intuo/brandbook" do %>
+            <span class="ion-social-github"></span> GitHub
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -1,3 +1,41 @@
 //
 // Header
 // --------------------------------------------------
+
+.header {
+  padding-top: 20px;
+  color: $white-base;
+  background-color: $brand-primary;
+}
+
+.header-logo { margin-left: -28px; }
+
+.header-navigation {
+  margin-top: 23px;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  a {
+    padding: 10px;
+    margin-left: 15px;
+    color: $white-base;
+    text-decoration: none;
+    border-radius: 3px;
+    opacity: .5;
+
+    &.is-button {
+      padding: 10px 15px;
+      border: 1px solid $white-base;
+      opacity: 1;
+
+      &:hover {
+        color: $brand-primary;
+        background: $white-base;
+      }
+    }
+  }
+}
