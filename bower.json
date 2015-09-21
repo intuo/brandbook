@@ -1,0 +1,31 @@
+{
+  "name": "brandbook",
+  "version": "0.1.0",
+  "homepage": "https://github.com/intuo/brandbook",
+  "description": "Pattern library and guidelines that power Intuo",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "brandbook",
+    "patterns",
+    "styleguide",
+    "intuo"
+  ],
+  "authors": [
+    "Intuo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
