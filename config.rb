@@ -8,6 +8,7 @@ sprockets.import_asset "jquery/dist/jquery.js"
 
 page "/docs/*", layout: "docs"
 page "/about.html", layout: "docs"
+page "/roadmap.html", layout: "docs"
 
 activate :autoprefixer do |config|
   config.browsers = ["last 2 versions", "Explorer >= 9"]
