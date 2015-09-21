@@ -6,6 +6,8 @@
   padding-top: 20px;
   color: $white-base;
   background-color: $brand-primary;
+
+  &.has-padding { padding: 5px 0; }
 }
 
 .header-logo { margin-left: -28px; }
@@ -26,6 +28,8 @@
     text-decoration: none;
     border-radius: 3px;
     opacity: .5;
+
+    &.active { opacity: 1; }
 
     &.is-button {
       padding: 10px 15px;

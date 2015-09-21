@@ -1,3 +1,32 @@
-<nav class="navigation" role="nav">
-  navigation
-</nav>
+<header class="header has-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <% link_to "/" do %>
+          <div class="header-logo">
+            <div class="logo logo-white is-small">
+              <div class="logo-symbol">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+
+              <div class="logo-text">
+                Intuo
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="col-md-9">
+        <div class="header-navigation">
+          <ul>
+            <li><%= link_to "Docs", "/docs/overview.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
+            <li><%= link_to "About", "/about.html", class: current_page.data.active == "about" ? "active" : "" %></li>
+            <li><%= link_to "Contribute", "https://github.com/intuo/brandbook", class: "is-button" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
