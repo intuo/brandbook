@@ -22,8 +22,9 @@
         <div class="header-navigation">
           <ul>
             <li><%= link_to "Docs", "/docs/overview.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
+            <li><%= link_to "Roadmap", "/roadmap.html", class: current_page.data.active == "roadmap" ? "active" : "" %></li>
             <li><%= link_to "About", "/about.html", class: current_page.data.active == "about" ? "active" : "" %></li>
-            <li><%= link_to "Contribute", "https://github.com/intuo/brandbook", class: "is-button" %></li>
+            <li><%= link_to "Contribute", "https://github.com/intuo/brandbook/pulls", class: "is-button" %></li>
           </ul>
         </div>
       </div>

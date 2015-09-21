@@ -1,0 +1,25 @@
+//
+// Page
+// --------------------------------------------------
+
+.page {
+  p {
+    margin-bottom: 20px;
+    line-height: 30px;
+
+    &:last-of-type { margin-bottom: 0; }
+  }
+}
+
+.page-title {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid darken($gray-lighter, 3);
+}
+
+.page-description {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  color: $gray;
+}

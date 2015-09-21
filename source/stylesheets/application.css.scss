@@ -9,7 +9,7 @@
 
 // Core CSS
 @import "bootstrap/scaffolding";
-@import "bootstrap/type";
+@import "type";
 @import "bootstrap/code";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
@@ -52,6 +52,7 @@
 @import "custom/header";
 @import "custom/logo";
 @import "custom/main";
+@import "custom/page";
 @import "custom/sidebar";
 
 // Utility classes
