@@ -1,0 +1,41 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@import "bootstrap/buttons";
+
+.btn {
+  border-radius: 3px;
+  box-shadow: none;
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:active:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-outline {
+  color: $white-base;
+  background-color: none;
+  border: 1px solid $white-base;
+
+  &:active:focus {
+    color: $brand-primary;
+    background-color: $white-base;
+  }
+
+  &:focus { color: $white-base; }
+
+  &:hover  {
+    color: $brand-primary;
+    background-color: $white-base;
+  }
+}
+
+.btn-lg {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 400;
+}

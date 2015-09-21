@@ -1,0 +1,29 @@
+//
+// Variables
+// --------------------------------------------------
+
+@import "bootstrap/variables";
+
+// Gray colors
+$white-base: #fff;
+$gray-base: #000;
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 50.5%);
+$gray-light: lighten($gray-base, 60%);
+$gray-lighter: lighten($gray-base, 95.5%);
+
+// Brand colors
+$brand-primary: #4C4877;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+// Typography
+$font-family-sans-serif: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-size-base: 16px;
+$font-family-base: Lato;
