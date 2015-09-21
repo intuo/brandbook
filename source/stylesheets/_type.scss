@@ -16,7 +16,7 @@ h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 45px;
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid darken($gray-lighter, 3);
 }
 
 h3 {
