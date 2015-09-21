@@ -4,19 +4,24 @@ Pattern library and guidelines that power Intuo.
 
 ## Installation
 
-```ruby
+Install Middleman:
+```
 gem install middleman
 ```
 
-```ruby
+Install Gems
+```
 bundle install
 ```
 
-```ruby
+Install Bower dependencies
+```
 bower install
 ```
 
 ## Usage
+
+Then point your browser to: http://localhost:4567
 
 ```
 $ middleman server
