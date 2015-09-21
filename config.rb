@@ -20,5 +20,5 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :relative_assets
-  set :http_prefix, "/intuo.github.io/brandbook/"
+  set :http_prefix, "//intuo.github.io/brandbook/"
 end
