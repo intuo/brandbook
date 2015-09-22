@@ -48,3 +48,25 @@
     }
   }
 }
+
+@media only screen and (max-width : 768px){
+  .header-logo {
+    margin-bottom: -20px;
+    text-align: center;
+  }
+
+  .header-navigation {
+    padding: 20px 0 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba($white-base, .2);
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    a.is-button { padding: 8px 5px; }
+    a { margin: 0; }
+  }
+}

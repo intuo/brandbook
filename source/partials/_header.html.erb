@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-4">
         <% link_to "/index.html" do %>
           <div class="header-logo">
             <div class="logo logo-white is-medium">
@@ -18,7 +18,7 @@
         <% end %>
       </div>
 
-      <div class="col-md-9">
+      <div class="col-sm-8">
         <div class="header-navigation">
           <ul>
             <li><%= link_to "Docs", "/docs/scaffolding.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
