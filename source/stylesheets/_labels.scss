@@ -1,0 +1,11 @@
+//
+// Labels
+// --------------------------------------------------
+
+@import "bootstrap/labels";
+
+.label-default {
+  font-size: inherit;
+  color: $gray-dark;
+  background: $gray-lighter;
+}
