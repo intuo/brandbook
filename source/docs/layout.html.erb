@@ -4,16 +4,55 @@ active: docs
 docs: layout
 ---
 
-<div class="page">
+<div class="page page-code">
   <h1 class="page-title">Layout</h1>
 
   <p class="page-description">
+    The main structure of the application.
+  </p>
+
+  <h3>Contents</h3>
+
+  <hr>
+
+  <ul>
+    <li><a href="#bootstrap">Bootstrap</a></li>
+    <li><a href="#scaffolding">Scaffolding</a></li>
+  </ul>
+
+  <h3 class="anchor-container">
+    <a href="#container" class="anchor"><span class="ion-link"></span></a>
+    <a name="container" class="anchor-text"></a>
+    Container
+  </h3>
+
+  <hr>
+
+  <p>
     Lorem ipsum
   </p>
 
-  <h2>Contents</h2>
+  <% code("ruby") do %>
+  def my_cool_method(message)
+    puts message
+  end
+  <% end %>
 
-  <ul>
-    <li>Lorem ipsum.</li>
-  </ul>
+  <h3 class="anchor-container">
+    <a href="#sidebar" class="anchor"><span class="ion-link"></span></a>
+    <a name="sidebar" class="anchor-text"></a>
+    Sidebar
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <% code("ruby") do %>
+  def my_cool_method(message)
+    puts message
+  end
+  <% end %>
 </div>

@@ -9,6 +9,8 @@
 
     &:last-of-type { margin-bottom: 0; }
   }
+
+  &.page-code p:last-of-type { margin-bottom: 20px; }
 }
 
 .page-title {
@@ -20,7 +22,7 @@
 .page-description {
   margin-bottom: 30px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   color: $gray;
 }
 
