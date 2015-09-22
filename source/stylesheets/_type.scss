@@ -24,7 +24,7 @@ li {
 h3 {
   &.anchor-container {
     position: relative;
-    margin-left: -33px;
+    margin-left: -22px;
   }
 
   .anchor {
@@ -34,7 +34,7 @@ h3 {
     color: $gray;
   }
 
-  .anchor-text { padding-left: 33px; }
+  .anchor-text { padding-left: 22px; }
   &:hover .anchor { display: block; }
 }
 

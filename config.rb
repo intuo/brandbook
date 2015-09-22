@@ -15,6 +15,7 @@ activate :autoprefixer do |config|
 end
 
 activate :directory_indexes
+activate :syntax
 
 configure :build do
   activate :minify_css

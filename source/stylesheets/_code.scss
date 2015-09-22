@@ -1,0 +1,23 @@
+//
+// Code
+// --------------------------------------------------
+
+@import "bootstrap/code";
+
+pre {
+  color: inherit;
+  background: none;
+  border: 0;
+}
+
+.highlight {
+  padding: 20px 0;
+  display: block;
+  border: 1px solid darken($gray-lighter, 3);
+  border-radius: $border-radius-base;
+
+  .gl {
+    border-bottom-left-radius: $border-radius-base;
+    border-top-left-radius: $border-radius-base;
+  }
+}
