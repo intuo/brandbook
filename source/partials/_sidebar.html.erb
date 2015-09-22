@@ -1,0 +1,61 @@
+<div class="panel panel-default">
+  <ul class="list-group">
+    <% link_to "/docs/scaffolding.html",
+      class: current_page.data.docs == "scaffolding" ? "list-group-item active" : "list-group-item" do %>
+      Scaffolding
+    <% end %>
+    <% link_to "/docs/layout.html",
+      class: current_page.data.docs == "layout" ? "list-group-item active" : "list-group-item" do %>
+      Layout
+    <% end %>
+    <% link_to "/docs/type.html",
+      class: current_page.data.docs == "type" ? "list-group-item active" : "list-group-item" do %>
+      Type
+    <% end %>
+    <% link_to "/docs/buttons.html",
+      class: current_page.data.docs == "buttons" ? "list-group-item active" : "list-group-item" do %>
+      Buttons
+    <% end %>
+    <% link_to "/docs/forms.html",
+      class: current_page.data.docs == "forms" ? "list-group-item active" : "list-group-item" do %>
+      Forms
+    <% end %>
+    <% link_to "/docs/navigation.html",
+      class: current_page.data.docs == "navigation" ? "list-group-item active" : "list-group-item" do %>
+      Navigation
+    <% end %>
+    <% link_to "/docs/alerts.html",
+      class: current_page.data.docs == "alerts" ? "list-group-item active" : "list-group-item" do %>
+      Alerts
+    <% end %>
+    <% link_to "/docs/blankslate.html",
+      class: current_page.data.docs == "blankslate" ? "list-group-item active" : "list-group-item" do %>
+      Blankslate
+    <% end %>
+    <% link_to "/docs/avatars.html",
+      class: current_page.data.docs == "avatars" ? "list-group-item active" : "list-group-item" do %>
+      Avatars
+    <% end %>
+    <% link_to "/docs/states.html",
+      class: current_page.data.docs == "states" ? "list-group-item active" : "list-group-item" do %>
+      States
+    <% end %>
+    <% link_to "/docs/utilities.html",
+      class: current_page.data.docs == "utilities" ? "list-group-item active" : "list-group-item" do %>
+      Utilities
+    <% end %>
+  </ul>
+</div>
+
+<div class="panel panel-default">
+  <ul class="list-group">
+    <% link_to "/docs/code-guidelines.html",
+      class: current_page.data.docs == "code-guidelines" ? "list-group-item active" : "list-group-item" do %>
+      Code guidelines
+    <% end %>
+    <% link_to "/docs/colors.html",
+      class: current_page.data.docs == "colors" ? "list-group-item active" : "list-group-item" do %>
+      Colors
+    <% end %>
+  </ul>
+</div>

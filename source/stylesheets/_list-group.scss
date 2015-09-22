@@ -1,0 +1,24 @@
+//
+// List group
+// --------------------------------------------------
+
+@import "bootstrap/list-group";
+
+.list-group {
+  font-size: 14px;
+}
+
+.panel > .list-group .list-group-item {
+  border-width: 1px 0 0 2px;
+
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    font-weight: 600;
+    color: $brand-primary;
+    background: none;
+    border-left: 2px solid $brand-primary;
+    border-color: $list-group-border;
+    border-left-color: $brand-primary;
+  }
+}
