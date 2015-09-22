@@ -6,6 +6,217 @@
     <meta name="viewport" content="width=device-width">
     <title>Brandbook - Scaffolding</title>
     <link href="/brandbook/images/favicon.png" rel="icon" type="image/png" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .c, .highlight .cd {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kv {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #009999;
+}
+.highlight .mh {
+  color: #009999;
+}
+.highlight .il {
+  color: #009999;
+}
+.highlight .mi {
+  color: #009999;
+}
+.highlight .mo {
+  color: #009999;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #009999;
+}
+.highlight .sb {
+  color: #d14;
+}
+.highlight .sc {
+  color: #d14;
+}
+.highlight .sd {
+  color: #d14;
+}
+.highlight .s2 {
+  color: #d14;
+}
+.highlight .se {
+  color: #d14;
+}
+.highlight .sh {
+  color: #d14;
+}
+.highlight .si {
+  color: #d14;
+}
+.highlight .sx {
+  color: #d14;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d14;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .s {
+  color: #d14;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .nb {
+  color: #0086B3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .vc {
+  color: #008080;
+}
+.highlight .vg {
+  color: #008080;
+}
+.highlight .vi {
+  color: #008080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #000000;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight {
+  background-color: #f8f8f8;
+}
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900" rel="stylesheet" />
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
     <link href="/brandbook/stylesheets/application.css" rel="stylesheet" />
@@ -56,12 +267,15 @@
 </a><a class="list-group-item" href="/brandbook/docs/type/">      Type
 </a><a class="list-group-item" href="/brandbook/docs/buttons/">      Buttons
 </a><a class="list-group-item" href="/brandbook/docs/forms/">      Forms
-</a><a class="list-group-item" href="/brandbook/docs/navigation/">      Navigation
 </a><a class="list-group-item" href="/brandbook/docs/alerts/">      Alerts
 </a><a class="list-group-item" href="/brandbook/docs/blankslate/">      Blankslate
 </a><a class="list-group-item" href="/brandbook/docs/avatars/">      Avatars
-</a><a class="list-group-item" href="/brandbook/docs/states/">      States
-</a><a class="list-group-item" href="/brandbook/docs/utilities/">      Utilities
+</a><a class="list-group-item" href="/brandbook/docs/cards/">      Cards
+</a><a class="list-group-item" href="/brandbook/docs/icon-font/">      Icon font
+</a><a class="list-group-item" href="/brandbook/docs/badges/">      Badges
+</a><a class="list-group-item" href="/brandbook/docs/stages/">      Stages
+</a><a class="list-group-item" href="/brandbook/docs/tiles/">      Tiles
+</a><a class="list-group-item" href="/brandbook/docs/infographics/">      Infographics
 </a>  </ul>
 </div>
 
@@ -75,18 +289,32 @@
           </div>
 
           <div class="col-sm-9">
-            <div class="page">
+            <div class="page page-code">
   <h1 class="page-title">Scaffolding</h1>
 
   <p class="page-description">
-    Lorem ipsum
+    The global dependencies that Intuo's front-end is built upon.
   </p>
 
-  <h2>Contents</h2>
+  <h3>Contents</h3>
+
+  <hr>
 
   <ul>
-    <li>Lorem ipsum.</li>
+    <li><a href="#bootstrap">Bootstrap</a></li>
   </ul>
+
+  <h3 class="anchor-container">
+    <a href="#bootstrap" class="anchor"><span class="ion-link"></span></a>
+    <a name="bootstrap" class="anchor-text"></a>
+    Bootstrap
+  </h3>
+
+  <hr>
+
+  <p>
+    Intuo utilizes a customized version of Bootstrap as it's CSS framework.
+  </p>
 </div>
 
           </div>
