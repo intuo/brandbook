@@ -52,6 +52,18 @@
       class: current_page.data.docs == "tiles" ? "list-group-item active" : "list-group-item" do %>
       Tiles
     <% end %>
+    <% link_to "/docs/certificates.html",
+      class: current_page.data.docs == "certificates" ? "list-group-item active" : "list-group-item" do %>
+      Certificates
+    <% end %>
+    <% link_to "/docs/color-picker.html",
+      class: current_page.data.docs == "color-picker" ? "list-group-item active" : "list-group-item" do %>
+      Color picker
+    <% end %>
+    <% link_to "/docs/answers.html",
+      class: current_page.data.docs == "answers" ? "list-group-item active" : "list-group-item" do %>
+      Answers
+    <% end %>
     <% link_to "/docs/infographics.html",
       class: current_page.data.docs == "infographics" ? "list-group-item active" : "list-group-item" do %>
       Infographics
