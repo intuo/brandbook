@@ -6,6 +6,7 @@
   p {
     margin-bottom: 20px;
     line-height: 30px;
+    color: $gray;
 
     &:last-of-type { margin-bottom: 0; }
   }
@@ -16,6 +17,8 @@
 .page-title {
   padding-bottom: 20px;
   margin-bottom: 20px;
+  font-weight: 300;
+  color: $brand-primary;
   border-bottom: 1px solid darken($gray-lighter, 3);
 }
 

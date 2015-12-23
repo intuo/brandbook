@@ -1,4 +1,5 @@
 <header class="header">
+  <div class="header-pattern" style="background-image:url(<%= image_path('school.png') %>)"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -21,10 +22,10 @@
       <div class="col-sm-8">
         <div class="header-navigation">
           <ul>
-            <li><%= link_to "Docs", "/docs/scaffolding.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
+            <li><%= link_to "Vision", "/vision.html", class: current_page.data.active == "vision" ? "active" : "" %></li>
+            <li><%= link_to "Components", "/components/getting-started.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
             <li><%= link_to "Roadmap", "/roadmap.html", class: current_page.data.active == "roadmap" ? "active" : "" %></li>
             <li><%= link_to "About", "/about.html", class: current_page.data.active == "about" ? "active" : "" %></li>
-            <li><%= link_to "Contribute", "https://github.com/intuo/brandbook/pulls", class: "is-button" %></li>
           </ul>
         </div>
       </div>

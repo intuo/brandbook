@@ -6,7 +6,8 @@ set :relative_links, false
 sprockets.append_path File.join root, "vendor/assets/bower"
 sprockets.import_asset "jquery/dist/jquery.js"
 
-page "/docs/*", layout: "docs"
+page "/components/*", layout: "docs"
+page "/vision.html", layout: "page"
 page "/about.html", layout: "page"
 page "/roadmap.html", layout: "page"
 

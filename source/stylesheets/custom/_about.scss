@@ -2,13 +2,42 @@
 // About
 // --------------------------------------------------
 
+.about {
+  padding: 25px;
+  text-align: center;
+  background: $gray-lighter;
+  border: 1px solid rgba($gray-base, .05);
+  border-radius: $border-radius-base;
+}
+
 .about-title {
+  padding-bottom: 25px;
   margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 600;
-  color: $brand-primary;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba($gray-base, .05);
 }
 
 .about-content {
   line-height: 30px;
+  color: $gray;
+}
+
+.about-icon {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.about-primary {
+  color: $brand-primary;
+}
+
+.about-success {
+  color: $brand-success;
+}
+
+.about-danger {
+  color: $brand-danger;
 }

@@ -12,8 +12,9 @@ pre {
 
 .highlight {
   display: block;
-  padding: 20px;
-  border: 1px solid darken($gray-lighter, 3);
+  padding: 20px 5px;
+  background: $gray-lighter;
+  border: 0;
   border-radius: $border-radius-base;
 
   .gl {

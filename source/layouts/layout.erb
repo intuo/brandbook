@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width">
     <title><%= current_page.data.title || "Intuo Brandbook" %></title>
     <%= favicon_tag "favicon.png" %>
-    <%= stylesheet_link_tag "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" %>
-    <%= stylesheet_link_tag "application" %>
     <script src="https://use.typekit.net/npz4hwv.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <%= stylesheet_link_tag "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "jquery/dist/jquery.js" %>
+    <%= javascript_include_tag "application" %>
   </head>
 
   <body>
@@ -22,8 +24,5 @@
     </main>
 
     <%= partial "partials/footer" %>
-
-    <%= javascript_include_tag "jquery/dist/jquery.js" %>
-    <%= javascript_include_tag "application" %>
   </body>
 </html>
