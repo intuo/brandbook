@@ -1,0 +1,141 @@
+//
+// Quizes
+// --------------------------------------------------
+
+.quiz-group { margin-top: 20px; }
+
+.quiz-container {
+  padding-top: 25px;
+  margin-top: 20px;
+  border-top: 1px solid $base-border-color;
+}
+
+.quiz-add { margin-left: 50px; }
+
+.quiz-name {
+  padding: 10px;
+  background-color: $gray-lighter;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+}
+
+.quiz-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.quiz-content {
+  padding: 10px;
+  border-top: 1px solid $base-border-color;
+}
+
+.quiz-example {
+  margin-top: 10px;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+  background-color: $white-base;
+  border: 1px solid darken($base-border-color, 5);
+  border-radius: $border-radius-base;
+}
+
+.quiz-footer {
+  padding: 10px;
+  text-align: right;
+  background: $gray-lighter;
+  border-top: 1px solid $base-border-color;
+  border-bottom-right-radius: $border-radius-base;
+  border-bottom-left-radius: $border-radius-base;
+
+  .btn { margin-left: 5px; }
+}
+
+.quiz-answer {
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    .quiz-text { margin-bottom: 6px; }
+  }
+
+  &.is-selected .quiz-label {
+    color: $white-base;
+    background-color: $brand-primary;
+    border-color: transparent;
+
+    .icon { display: block; }
+  }
+
+  &:hover {
+    .quiz-body { padding-right: 34px; }
+    .quiz-actions { opacity: 1; }
+  }
+}
+
+.quiz-label {
+  position: absolute;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  color: $gray-light;
+  text-align: center;
+  cursor: pointer;
+  background-color: lighten($gray-light, 10);
+  border: 1px solid $gray-light;
+  border-radius: 100%;
+
+  .icon {
+    position: relative;
+    top: 50%;
+    display: none;
+    transform: translateY(-50%);
+  }
+}
+
+.quiz-body {
+  padding-left: 50px;
+  transition: all 150ms ease;
+
+  &.is-full { padding-left: 0; }
+  &.has-margin { margin-top: 10px; }
+}
+
+.quiz-text {
+  padding-top: 7px;
+  margin-bottom: 20px;
+}
+
+.quiz-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 150ms ease;
+
+  .btn {
+    padding: 4px 13px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .icon { font-size: 18px; }
+}
+
+.quiz-filter {
+  padding-top: 5px;
+  margin: 15px 0 -5px;
+  border-top: 1px solid $base-border-color;
+
+  label { padding: 0; }
+  input { margin: 0 10px 0 0; }
+  .bootstrap-switch { margin-right: 10px; }
+}
+
+.quiz-media {
+  padding: 10px;
+}

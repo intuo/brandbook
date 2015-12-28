@@ -1,0 +1,78 @@
+//
+// Colors
+// --------------------------------------------------
+
+.color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  border-radius: 100%;
+
+  &.is-small {
+    width: 8px;
+    height: 8px;
+  }
+
+  &.is-swatch {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: $border-radius-base;
+  }
+
+  &.is-active {
+    border-color: $white-base;
+    box-shadow: 0 0 0 2px $brand-primary;
+  }
+
+  &.color-primary {
+    background-color: lighten($brand-primary, 10);
+  }
+
+  &.color-warning {
+    background-color: lighten($brand-warning, 10);
+  }
+
+  &.color-success {
+    background-color: lighten($brand-success, 10);
+  }
+
+  &.color-info {
+    background-color: lighten($brand-info, 10);
+  }
+
+  &.color-danger {
+    background-color: lighten($brand-danger, 10);
+  }
+
+  &.color-default {
+    background-color: $gray-light;
+  }
+}
+
+.color-label {
+  padding: 3px 5px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-radius: $border-radius-base;
+
+  &.color-success {
+    color: $brand-success;
+    border: 1px solid rgba($brand-success, .5);
+  }
+
+  &.color-danger {
+    color: $brand-danger;
+    border: 1px solid rgba($brand-danger, .5);
+  }
+
+  &.color-warning {
+    color: $brand-warning;
+    border: 1px solid rgba($brand-warning, .5);
+  }
+}

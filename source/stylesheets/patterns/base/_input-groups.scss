@@ -1,0 +1,16 @@
+//
+// Input groups
+// --------------------------------------------------
+
+@import "bootstrap/input-groups";
+
+.input-group-addon {
+  font-size: 18px;
+  color: $brand-primary;
+  background-color: $gray-lighter;
+  border-color: $base-border-color;
+
+  &.is-text {
+    font-size: 15px;
+  }
+}

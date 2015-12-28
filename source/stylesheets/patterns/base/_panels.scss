@@ -1,0 +1,111 @@
+//
+// Panels
+// --------------------------------------------------
+
+@import "bootstrap/panels";
+
+.panel {
+  border: 0;
+  border-radius: $border-radius-base;
+  box-shadow: 0 1px 1px rgba($gray-base, .1);
+
+  &.is-last { margin-bottom: 0; }
+}
+
+.panel-white {
+  .panel-body { padding: 15px 0; }
+  .panel-heading { border-radius: $border-radius-base; }
+}
+
+.panel-default > .panel-heading {
+  padding: 10px 15px;
+  color: $gray;
+  background: $gray-light;
+  border-bottom: 0;
+}
+
+.panel-title {
+  padding-bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 0;
+}
+
+.panel-transparent .panel-body {
+  padding: 0;
+}
+
+.panel-grid .panel-body {
+  padding: 15px 15px 0;
+}
+
+.panel-body {
+  position: relative;
+}
+
+.panel-filters {
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+
+  &.no-padding {
+    padding: 0;
+
+    &.is-right { right: 15px; }
+  }
+
+  &.is-right {
+    right: 0;
+
+    .panel-filter {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+
+  &.is-legend {
+    right: 183px;
+  }
+
+  .chosen-container { width: 200px !important; }
+}
+
+.panel-filter {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-weight: 600;
+  color: $gray-dark;
+  text-decoration: none;
+  border-radius: 45px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: $white-base;
+    background: $brand-primary;
+  }
+}
+
+.panel-container {
+  position: relative;
+  height: 229px;
+
+  &.has-speedometer {
+    text-align: center;
+  }
+}
+
+.panel-graph {
+  margin-top: 20px;
+
+  &.is-prototype {
+    margin-top: 55px;
+  }
+}

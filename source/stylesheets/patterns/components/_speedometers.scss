@@ -1,0 +1,41 @@
+//
+// Speedometers
+// --------------------------------------------------
+
+.speedometer {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  canvas {
+    width: 120px;
+    height: 120px;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: -3px 0 0;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+}
+
+.speedometer-success {
+  color: $brand-success;
+}
+
+.speedometer-title {
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+.speedometer-subtitle {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: $gray;
+}

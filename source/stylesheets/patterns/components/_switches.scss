@@ -1,0 +1,50 @@
+//
+// Switches
+// --------------------------------------------------
+
+.switch {
+  margin-bottom: 20px;
+  font-size: 0;
+
+  :first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+
+  :last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &.is-last { margin-bottom: 0; }
+}
+
+.switch-option {
+  display: inline-block;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white-base;
+  text-align: center;
+  cursor: pointer;
+  background-color: $gray;
+  border-right: 1px solid darken($gray, 15);
+
+  &:last-of-type { border-right: 0; }
+
+  &.is-active {
+    color: $white-base;
+    background-color: darken($gray, 15);
+  }
+
+  &:active {
+    color: $white-base;
+    background-color: darken($gray, 10);
+  }
+}
+
+.switch-two .switch-option { width: 50%; }
+.switch-three .switch-option { width: 33.33333%; }
+.switch-four .switch-option { width: 25%; }
+.switch-five .switch-option { width: 20%; }
+.switch-six .switch-option { width: 16.666666667%; }

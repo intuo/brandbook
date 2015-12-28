@@ -1,0 +1,71 @@
+//
+// Logo
+// --------------------------------------------------
+
+.logo {
+  display: inline-block;
+
+  &.is-large .logo-symbol { transform: scale(1.2); }
+
+  &.is-small {
+    .logo-symbol { transform: scale(.3); }
+
+    .logo-text {
+      margin: 4px 0 0 -20px;
+      font-size: 22px;
+    }
+  }
+
+  &.is-medium {
+    .logo-symbol { transform: scale(.45); }
+    .logo-text { margin-top: -5px; }
+  }
+}
+
+.logo-symbol {
+  display: inline-block;
+  width: 85px;
+  height: 55px;
+  font-size: 0;
+  vertical-align: middle;
+  transform: scale(1);
+
+  .left,
+  .right {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    font-size: $font-size-base;
+  }
+
+  .left {
+    opacity: .9;
+    transform: skewY(25deg);
+  }
+
+  .right {
+    display: inline-block;
+    opacity: .3;
+    transform: skewY(-25deg);
+  }
+}
+
+.logo-text {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  a { text-decoration: none; }
+}
+
+.logo-white {
+  color: $white-base;
+
+  .left,
+  .right {
+    background-color: $white-base;
+  }
+}

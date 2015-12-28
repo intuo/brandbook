@@ -1,0 +1,124 @@
+//
+// Heatmap
+// --------------------------------------------------
+
+.heatmap-users { margin-top: 48px; }
+
+.heatmap-user {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: $white-base;
+  border: 1px solid $gray-light;
+  border-radius: $border-radius-base;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.heatmap-avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  margin: 4px 0 0 6px;
+  border-radius: 100%;
+}
+
+.heatmap-name {
+  display: inline-block;
+  padding-left: 55px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.heatmap-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.heatmap-stage {
+  float: left;
+  margin-right: 18px;
+
+  &:last-of-type { margin-right: 0; }
+}
+
+.heatmap-heading {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid darken($base-border-color, 3);
+
+  .progress { margin: 10px 0 0; }
+}
+
+.heatmap-content {
+  padding-bottom: 5px;
+}
+
+.heatmap-row {
+  margin-bottom: 10px;
+  font-size: 0;
+  background-color: $white-base;
+  border: 1px solid $gray-light;
+  border-radius: 45px;
+}
+
+.heatmap-step {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  outline: none;
+
+  &:active span { opacity: 1; }
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 11px;
+    margin: 0 auto;
+    color: $white-base;
+    opacity: .5;
+    transform: translateY(-50%);
+    transition: opacity 150ms ease;
+  }
+
+  &.heatmap-success { background: $brand-success; }
+  &.heatmap-warning { background: $brand-warning; }
+  &.heatmap-danger { background: $brand-danger; }
+  &.heatmap-primary { background: $brand-primary; }
+
+  &.heatmap-default {
+    background-color: $gray-lighter;
+
+    span { color: $gray; }
+  }
+
+  &.active {
+    &.heatmap-success { border-color: darken($brand-success, 10); }
+    &.heatmap-warning { border-color: darken($brand-warning, 10); }
+    &.heatmap-danger { border-color: darken($brand-danger, 10); }
+    &.heatmap-default { border-color: darken($gray-lighter, 13); }
+  }
+}
+
+.tab-heatmap {
+  padding-right: 10px;
+
+  .col-xs-9 { padding-right: 0; }
+}

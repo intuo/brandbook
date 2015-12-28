@@ -1,0 +1,64 @@
+//
+// Lists
+// --------------------------------------------------
+
+.list {
+  margin-top: 20px;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+
+  &.no-margin { margin: 0; }
+}
+
+.list-item {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid $base-border-color;
+
+  &:last-of-type { border-bottom: 0; }
+  &:hover .list-actions { opacity: 1; }
+}
+
+.list-avatar {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.list-icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+
+  span { font-size: 18px; }
+}
+
+.list-name {
+  display: inline-block;
+  padding-right: 30px;
+
+  a { text-decoration: none; }
+}
+
+.list-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 7px 4px 0 0;
+  opacity: 0;
+  transition: all 150ms ease;
+
+  .btn {
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px 5px 9px;
+    margin-left: 8px;
+    text-align: center;
+    border-radius: 100%;
+    outline: 0;
+  }
+}
+
+.list-button { margin-top: 10px; }

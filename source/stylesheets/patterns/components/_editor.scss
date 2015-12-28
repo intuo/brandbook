@@ -1,0 +1,38 @@
+//
+// Editor
+// --------------------------------------------------
+
+.editor-title {
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  background-color: $body-bg;
+  border-bottom: 1px solid $base-border-color;
+}
+
+.editor-group {
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid $base-border-color;
+
+  &:hover {
+    background-color: lighten($base-border-color, 5);
+  }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.editor-label {
+  font-weight: 400;
+  color: $gray;
+}
+
+.editor-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

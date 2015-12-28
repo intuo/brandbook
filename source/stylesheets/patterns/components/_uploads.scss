@@ -1,0 +1,128 @@
+//
+// Uploads
+// --------------------------------------------------
+
+.upload-drag {
+  position: relative;
+  height: 200px;
+  text-align: center;
+  cursor: default;
+  background: $gray-lighter;
+  border: 1px dashed $base-border-color;
+  border-radius: $border-radius-base;
+  opacity: 1;
+  transition: all 150ms ease;
+}
+
+.accepts-drag .upload-drag {
+  border-color: $brand-primary;
+  
+  .icon { color: $brand-primary; }
+}
+
+.upload-instructions {
+  position: relative;
+  top: 50%;
+  padding: 15px;
+  font-weight: 400;
+  transform: translateY(-50%);
+
+  a {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .icon {
+    font-size: 60px;
+    line-height: 0;
+    color: $gray;
+  }
+
+  p { margin: 5px 0 0; }
+}
+
+.upload-button { margin-top: 15px; }
+
+.upload-items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.upload-item {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid $base-border-color;
+
+  &:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+
+    .upload-close { margin-top: 0; }
+  }
+
+  &:hover .upload-actions {
+    opacity: 1;
+  }
+}
+
+.upload-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 150ms ease;
+}
+
+.upload-name {
+  max-width: 250px;
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-progress {
+  .progress {
+    height: 4px;
+    margin: 10px 0 0;
+  }
+}
+
+.upload-close {
+  margin-top: 10px;
+  font-size: 18px;
+  color: $brand-danger;
+  cursor: pointer;
+}
+
+.upload-preview {
+  margin-bottom: 10px;
+
+  &.is-course {
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-radius-base;
+  }
+
+  &.is-track {
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-radius-base;
+  }
+}
+
+input[type="file"].upload-form {
+  display: none;
+}
+
+.upload-label {
+  width: 100%;
+}

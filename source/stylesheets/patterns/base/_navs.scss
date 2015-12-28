@@ -1,0 +1,92 @@
+//
+// Navs
+// --------------------------------------------------
+
+@import "bootstrap/navs";
+
+.nav-tabs {
+  position: fixed;
+  top: 56px;
+  z-index: 3;
+  width: 100%;
+  padding-right: 0;
+  margin-left: -100px;
+  text-align: center;
+  background: $gray-lighter;
+  border-bottom: 0;
+  box-shadow: 0 1px 2px rgba($gray-base, .1);
+}
+
+.nav-large {
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  background: none;
+  border-bottom: 1px solid $base-border-color;
+  box-shadow: none;
+
+  &.nav-tabs li > a {
+    padding-top: 0;
+  }
+}
+
+.nav-tabs > li > a {
+  padding: 10px 0;
+  margin: 0 15px;
+  font-weight: 500;
+
+  span { margin-right: 5px; }
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:focus {
+  color: $gray;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: $brand-primary;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid $brand-primary;
+}
+
+.nav-tabs > li > a:hover {
+  color: $brand-primary;
+  background: 0;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs > li {
+  display: inline-block;
+  float: none;
+  margin-bottom: -1px;
+}
+
+.tab-content {
+  position: relative;
+  padding: 45px 20px 0;
+
+  &.has-margin {
+    margin: 20px;
+  }
+
+  &.no-padding {
+    padding-bottom: 0;
+  }
+
+  &.no-nav {
+    padding-top: 0;
+  }
+
+  &.has-padding {
+    margin-top: -20px;
+  }
+}
+
+.tab-large {
+  padding: 20px 0 0;
+}

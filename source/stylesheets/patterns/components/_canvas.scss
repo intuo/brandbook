@@ -1,0 +1,12 @@
+//
+// Canvas
+// --------------------------------------------------
+
+.canvas-container {
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  background-color: $white-base;
+  transform: translateY(-50%);
+  box-shadow: $shadow-base;
+}

@@ -1,0 +1,103 @@
+//
+// Engagement
+// --------------------------------------------------
+
+.engagement-video {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed rgba($gray-base, .1);
+
+  &:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: -5px;
+    border-bottom: 0;
+  }
+}
+
+.engagement-date {
+  margin-top: 10px;
+
+  span {
+    margin-right: 10px;
+    color: lighten($gray, 10);
+  }
+}
+
+.engagement-iframe {
+  cursor: default;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+}
+
+.engagement-number {
+  margin-right: 10px;
+  font-weight: 500;
+  color: $gray;
+}
+
+.engagement-quiz table {
+  border-radius: $border-radius-base;
+
+  > tbody > tr > td {
+    border-left: 0;
+  }
+
+  > tbody > tr > td.has-border {
+    vertical-align: middle;
+    border-right: 1px solid $base-border-color;
+  }
+
+  > thead:first-child > tr:first-child > th {
+    background: $gray-lighter;
+    border-bottom-width: 1px;
+
+    .text-success { font-weight: 400; }
+    .text-danger { font-weight: 400; }
+  }
+
+  .text-success { font-weight: 600; }
+  &:last-of-type { margin-bottom: 0; }
+
+  h5 {
+    padding-bottom: 0;
+    margin: -5px 0 15px;
+    font-size: 16px;
+  }
+}
+
+.engagement-blank {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  border: 1px solid rgba($gray-base, .1);
+  border-radius: $border-radius-base;
+}
+
+.engagement-profile {
+  position: absolute;
+  margin: 6px 0 0 5px;
+
+  img {
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+}
+
+.engagement-open {
+  padding-left: 190px;
+}
+
+.engagement-comment {
+  margin-bottom: 15px;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.engagement-user {
+  display: inline-block;
+  max-width: 140px;
+  vertical-align: middle;
+}

@@ -1,0 +1,133 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@import "bootstrap/buttons";
+
+.btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: $border-radius-base;
+  outline: none;
+  transition: all 200ms ease;
+
+  .icon {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  &.is-icon .icon {
+    margin-right: 0;
+  }
+
+  &.btn-cta {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+
+  &:active:focus,
+  &:active:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.btn-lg {
+  font-weight: 500;
+  border-radius: $btn-border-radius-base;
+}
+
+.btn-support {
+  display: block;
+  padding: 8px;
+  font-size: 22px;
+  color: $white-base;
+
+  &:hover {
+    color: $white-base;
+    text-decoration: none;
+    background-color: $gray-darkest;
+  }
+}
+
+.btn-group-justified > .btn + .btn,
+.btn-group-justified > .btn-group + .btn,
+.btn-group-justified > .btn + .btn-group > .btn,
+.btn-group-justified > .btn-group + .btn-group > .btn {
+  border-left-width: 0;
+}
+
+.btn-default,
+.btn-default.active {
+  color: $gray;
+  background: $gray-lighter;
+  border: 1px solid $base-border-color;
+  box-shadow: 0 1px 1px rgba($gray-base, .04);
+
+  &:hover {
+    color: $gray-dark;
+    background-color: lighten($gray-light, 3%);
+    border-color: darken($gray-light, 3%);
+  }
+
+  &:active,
+  &:focus,
+  &:active:focus,
+  &:active:hover {
+    color: $gray-dark;
+    background-color: darken($gray-lighter, 5%);
+    border: 1px solid $base-border-color;
+  }
+}
+
+.btn-outline {
+  color: $white-base;
+  background-color: none;
+  border: 1px solid rgba($white-base, .5);
+  outline: 0;
+
+  &:active:focus {
+    color: $gray-darker;
+    background-color: $white-base;
+  }
+
+  &:focus { color: $white-base; }
+
+  &:hover {
+    color: $gray-darker;
+    background-color: $white-base;
+  }
+}
+
+.btn-transparent {
+  color: $brand-primary;
+  text-shadow: none;
+  background: none;
+  border: 1px solid $gray-light;
+  outline: 0;
+  box-shadow: none;
+
+  &:active:focus {
+    color: $white-base;
+    background-color: $brand-primary;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+    background: none;
+  }
+}
+
+.btn.dropdown-toggle {
+  border-left: 1px solid rgba($gray-base, .05);
+}

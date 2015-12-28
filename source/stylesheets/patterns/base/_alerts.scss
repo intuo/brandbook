@@ -1,0 +1,34 @@
+//
+// Alerts
+// --------------------------------------------------
+
+@import "bootstrap/alerts";
+
+.alert {
+  border: 0;
+  border-bottom: 1px solid rgba($gray-base, .07);
+}
+
+.alert.has-margin {
+  margin: 15px 0 0;
+}
+
+.alert.no-margin {
+  margin-bottom: 0;
+}
+
+.alert.has-button {
+  padding: 10px;
+
+  p { margin: 10px 0 0 10px; }
+}
+
+.alert-default {
+  color: $gray;
+  background: none;
+  border: 1px solid $base-border-color;
+}
+
+.alert-action .btn {
+  margin-top: 10px;
+}

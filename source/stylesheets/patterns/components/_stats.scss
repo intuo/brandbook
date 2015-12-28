@@ -1,0 +1,104 @@
+//
+// Stats
+// --------------------------------------------------
+
+.stat {
+  padding: 20px;
+  margin-bottom: 25px;
+  color: $gray;
+  background: $white-base;
+  border-radius: $border-radius-base;
+  box-shadow: 0 1px 1px rgba($gray-base, .1);
+
+  &.is-small {
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    .stat-value {
+      font-size: 30px;
+      color: darken($gray, 5);
+    }
+
+    .stat-name { color: lighten($gray, 20); }
+  }
+
+  &.no-padding {
+    padding: 0;
+
+    .highcharts-series { opacity: .4; }
+    .highcharts-markers { display: none; }
+
+    .speedometer {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  &.is-centered { text-align: center; }
+
+  &.is-transparent {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .progress-group:last-of-type .progress { margin-bottom: 5px; }
+}
+
+.stat-fixed {
+  position: fixed;
+  overflow-y: scroll;
+
+  .btn { margin-top: 20px; }
+}
+
+.stat-value {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 35px;
+  color: $brand-primary;
+
+  &.is-info { color: $brand-primary; }
+  &.is-success { color: $brand-success; }
+  &.is-info { color: $brand-info; }
+  &.is-warning { color: $brand-warning; }
+  &.is-danger { color: $brand-danger; }
+}
+
+.stat-name {
+  margin-bottom: -3px;
+  font-weight: 500;
+}
+
+.stat-border { border-right: 1px solid $gray-light; }
+
+.stat-info {
+  padding-top: 5px;
+  text-align: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+    list-style: none;
+
+    &:last-of-type { margin-bottom: 0; }
+  }
+
+  .is-danger,
+  .is-danger strong {
+    color: $brand-danger;
+  }
+}
+
+.stat-top { margin-top: 31px; }
+.stat-footer { margin-top: -43px; }

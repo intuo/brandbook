@@ -1,0 +1,39 @@
+//
+// Toggles
+// --------------------------------------------------
+
+.toggle {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.bootstrap-switch {
+  overflow: hidden;
+  font-family: $font-family-sans-serif;
+  background-color: $gray-light;
+  border: 0;
+  border-radius: $border-radius-base;
+  box-shadow: 0 0 0 1px darken($base-border-color, 3);
+
+  &.bootstrap-switch-animate .bootstrap-switch-container { transition: margin-left 150ms ease; }
+
+  &.bootstrap-switch-focused { box-shadow: 0 0 0 2px $brand-primary; }
+
+  .bootstrap-switch-handle-off.bootstrap-switch-default {
+    color: $gray-dark;
+    background-color: $gray-light;
+  }
+
+  .bootstrap-switch-handle-on,
+  .bootstrap-switch-handle-off,
+  .bootstrap-switch-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .bootstrap-switch-handle-on.bootstrap-switch-primary {
+    background-color: $brand-primary;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

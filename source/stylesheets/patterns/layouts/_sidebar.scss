@@ -1,0 +1,135 @@
+//
+// Sidebar
+// --------------------------------------------------
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 200px;
+  height: 100%;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $white-base;
+  background-color: $gray-darker;
+  -webkit-user-select: none;
+
+  ul {
+    padding: 0;
+    margin: 5px 0 0;
+  }
+
+  li {
+    list-style: none;
+
+    .icon {
+      margin-right: 10px;
+      font-size: 22px;
+      vertical-align: middle;
+      opacity: .5;
+    }
+
+    ul { display: none; }
+    &.active ul { display: block; }
+
+    a,
+    .sidebar-section {
+      display: block;
+      padding: 10px 20px;
+      color: lighten($gray-darker, 65);
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+
+    li a:hover,
+    a:hover,
+    a.active {
+      color: $white-base;
+    }
+
+    &.active > a {
+      color: $white-base;
+
+      .icon {
+        color: $brand-primary;
+        opacity: 1;
+      }
+    }
+
+    li a {
+      padding: 8px 8px 8px 50px;
+      margin-right: 10px;
+      color: lighten($gray-darker, 45);
+      transition: all 200ms ease;
+
+      &.active {
+        color: $white-base;
+        background-color: lighten($gray-dark, 8%);
+        border-top-right-radius: $border-radius-base;
+        border-bottom-right-radius: $border-radius-base;
+      }
+    }
+  }
+}
+
+.sidebar-branding {
+  position: relative;
+  padding: 8px;
+  cursor: pointer;
+  background-color: $brand-primary;
+  transition: background-color 150ms ease;
+  -webkit-user-select: none;
+  text-shadow: 0 1px 1px rgba($gray-darker, .3);
+
+  &:hover {
+    background-color: lighten($brand-primary, 10%);
+  }
+
+  &:active,
+  &.active {
+    background-color: darken($brand-primary, 10%);
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -15px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    font-size: 18px;
+  }
+}
+
+.sidebar-info {
+  padding-left: 50px;
+  -webkit-user-select: none;
+
+  .company {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white-base;
+  }
+
+  .user {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: lighten($gray-light, 3);
+  }
+
+  .company,
+  .user {
+    width: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-user-select: none;
+  }
+}

@@ -1,0 +1,31 @@
+//
+// Slides
+// --------------------------------------------------
+
+.slide {
+  position: relative;
+}
+
+.slide-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.slide-canvas {
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 2px rgba($gray-base, .1);
+}
+
+div:focus {
+  outline: none;
+}
+
+.slide-total {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 500;
+}

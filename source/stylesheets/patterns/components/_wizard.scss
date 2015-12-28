@@ -1,0 +1,160 @@
+//
+// Wizards
+// --------------------------------------------------
+
+.wizard-steps {
+  margin: 25px 0 50px;
+}
+
+.wizard-fill {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  margin-top: -1px;
+  background: $body-bg;
+
+  &.is-right { right: 0; }
+}
+
+.wizard-line {
+  height: 1px;
+  background: darken($base-border-color, 10);
+}
+
+.wizard-step {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: -25px;
+  text-align: center;
+
+  .wizard-number .checkmark { display: none; }
+
+  &.is-completed .wizard-number {
+    color: $white-base;
+    background-color: $brand-success;
+    border-color: $brand-success;
+
+    .number { display: none; }
+    .checkmark { display: block; }
+  }
+
+  &.is-active .wizard-number {
+    color: $brand-success;
+    border-color: $brand-success;
+  }
+
+  &.is-active .wizard-item {
+    color: $brand-success;
+  }
+}
+
+.wizard-number {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: darken($base-border-color, 30);
+  background-color: $body-bg;
+  border: 1px solid darken($base-border-color, 10);
+  border-radius: 100%;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateY(-50%);
+  }
+}
+
+.wizard-item {
+  color: darken($base-border-color, 30);
+  text-align: center;
+}
+
+.wizard-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.wizard-title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: darken($base-border-color, 50);
+  text-align: center;
+}
+
+.wizard-box {
+  position: relative;
+  padding: 50px;
+  color: $gray;
+  text-align: center;
+  cursor: pointer;
+  background-color: $white-base;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+
+  &:hover {
+    border-color: darken($base-border-color, 10);
+  }
+
+  &.is-selected {
+    border-color: $brand-success;
+
+    .check { display: block; }
+  }
+
+  .icon {
+    margin-bottom: 15px;
+    font-size: 65px;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray-dark;
+  }
+
+  .description {
+    margin-top: 10px;
+    color: $gray;
+  }
+
+  .check {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: $white-base;
+    background-color: $brand-success;
+    border-radius: 100%;
+
+    span {
+      position: relative;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 30px;
+      font-size: 16px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.wizard-content {
+  padding: 20px;
+  color: $gray;
+  background-color: $white-base;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+
+  .form-horizontal {
+    width: 650px;
+    margin: 0 auto;
+  }
+}

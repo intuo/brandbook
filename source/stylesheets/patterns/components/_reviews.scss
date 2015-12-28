@@ -1,0 +1,121 @@
+//
+// Reviews
+// --------------------------------------------------
+
+.review {
+  max-width: 600px;
+  margin-bottom: 25px;
+  background-color: $white-base;
+  border-radius: $border-radius-base;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.review-question {
+  padding: 15px;
+  color: $gray;
+}
+
+.review-answer {
+  padding: 15px;
+  margin: 0 15px 15px;
+  font-weight: 500;
+  color: $gray-dark;
+  background-color: $gray-lighter;
+  border-radius: $border-radius-base;
+}
+
+.review-total {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+
+  strong {
+    font-weight: 500;
+    color: $gray-dark;
+  }
+}
+
+.review-score {
+  padding: 0 15px 15px;
+
+  .slider {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider-horizontal .slider-track { margin-top: -2px; }
+}
+
+.review-details {
+  padding: 15px;
+  border-bottom: 1px solid $gray-light;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+
+  .avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+}
+
+.review-info {
+  display: inline-block;
+  vertical-align: middle;
+
+  a {
+    display: block;
+
+    &:hover { text-decoration: none; }
+  }
+
+  .username {
+    font-weight: 600;
+    color: $gray-dark;
+  }
+
+  .course { color: $gray; }
+}
+
+.review-comments {
+  .empty {
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+.review-author {
+  img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+
+  a {
+    display: inline-block;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+}
+
+.review-comment {
+  padding: 15px;
+  border-top: 1px solid $base-border-color;
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.review-input {
+  padding: 15px 15px 0;
+  border-top: 1px solid $base-border-color;
+}
+
+.review-submit { padding: 15px; }
