@@ -17,7 +17,7 @@
   }
 }
 
-.btn-default {
+.btn-white {
   color: $brand-primary;
   background-color: $white-base;
   border: 1px solid $white-base;
@@ -51,8 +51,8 @@
   &:focus { color: $white-base; }
 
   &:hover {
-    color: $white-base;
-    background-color: rgba($white-base, .1);
+    color: $white-base !important;
+    background-color: rgba($white-base, .1) !important;
   }
 }
 

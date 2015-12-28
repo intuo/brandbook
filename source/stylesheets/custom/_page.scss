@@ -5,13 +5,23 @@
 .page {
   p {
     margin-bottom: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: $gray;
 
     &:last-of-type { margin-bottom: 0; }
   }
 
+  ul {
+    font-size: 18px;
+    color: $gray;
+  }
+
   &.page-code p:last-of-type { margin-bottom: 20px; }
+
+  a {
+    font-weight: 600;
+  }
 }
 
 .page-title {
@@ -20,11 +30,11 @@
   color: $brand-primary;
 }
 
-.page-description {
+p.page-description {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: 400;
-  color: $gray;
+  color: $gray-dark;
 }
 
 @media only screen and (max-width : 768px){

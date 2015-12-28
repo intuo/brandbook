@@ -3,3 +3,8 @@
 // --------------------------------------------------
 
 @import "bootstrap/scaffolding";
+
+html.turbolinks-progress-bar::before {
+  background-color: $white-base  !important;
+  height: 2px !important;
+}
