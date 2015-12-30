@@ -4,21 +4,18 @@
 
 @import "bootstrap/code";
 
-pre {
-  color: inherit;
-  background: none;
-  border: 0;
-}
-
 .highlight {
   display: block;
   padding: 20px 5px;
+  color: inherit;
   background: $gray-lighter;
   border: 0;
-  border-radius: $border-radius-base;
+  border-radius: 0;
+  border-bottom-right-radius: $border-radius-base;
+  border-bottom-left-radius: $border-radius-base;
 
   .gl {
+    border-bottom-right-radius: $border-radius-base;
     border-bottom-left-radius: $border-radius-base;
-    border-top-left-radius: $border-radius-base;
   }
 }

@@ -32,6 +32,23 @@ docs: filters
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="filter">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="filter-left">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <span class="ion-search"></span>
+              </span>
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -49,6 +66,37 @@ docs: filters
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="filter">
+      <div class="row">
+        <div class="col-xs-5">
+          <div class="filter-left">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <span class="ion-search"></span>
+              </span>
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-7">
+          <div class="filter-right">
+            <div class="filter-select">
+              <select data-placeholder="Sort by" class="chosen-select" tabindex="-1">
+                <option selected>All certificates</option>
+                <option>Product expert</option>
+                <option>New marketing hire</option>
+                <option>New accounting hire</option>
+                <option>Sales onboarding</option>
+                <option>Senior</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

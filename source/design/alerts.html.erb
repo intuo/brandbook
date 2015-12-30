@@ -17,7 +17,6 @@ docs: alerts
 
   <ul>
     <li><a href="#errors">Errors</a></li>
-    <li><a href="#notifications">Notifications</a></li>
     <li><a href="#actions">Actions</a></li>
   </ul>
 
@@ -33,23 +32,14 @@ docs: alerts
     Lorem ipsum
   </p>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
-  <% end %>
-
-  <h3 class="anchor-container">
-    <a href="#notifications" class="anchor"><span class="ion-link"></span></a>
-    <a name="notifications" class="anchor-text"></a>
-    Notifications
-  </h3>
-
-  <hr>
-
-  <p>
-    Lorem ipsum
-  </p>
+  <div class="sandbox">
+    <div class="alert alert-danger">
+      <ul>
+        <li>Complete your question in the quiz</li>
+        <li>The certificate name can't be blank</li>
+      </ul>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)
@@ -68,6 +58,20 @@ docs: alerts
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="alert alert-warning has-button clearfix">
+      <div class="pull-left">
+        <p>Last updated at September 13 2015, 11:33:16am.</p>
+      </div>
+      <div class="pull-right text-right">
+        <% link_to "#", class: "btn btn-success" do %>
+          <span class="icon ion-refresh"></span>
+          Update data
+        <% end %>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

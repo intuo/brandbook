@@ -32,6 +32,14 @@ docs: buttons
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <a href="#" class="btn btn-default">Default</a>
+    <a href="#" class="btn btn-success">Success</a>
+    <a href="#" class="btn btn-warning">Warning</a>
+    <a href="#" class="btn btn-danger">Danger</a>
+    <a href="#" class="btn btn-info">Info</a>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -49,6 +57,23 @@ docs: buttons
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="btn-group">
+      <a class="btn btn-default" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Actions
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-done"></span> Present</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-close"></span> Absent</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

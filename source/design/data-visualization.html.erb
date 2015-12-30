@@ -33,6 +33,17 @@ docs: data-visualization
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="panel panel-default panel-transparent">
+      <div class="panel-heading">
+        <h3 class="panel-title">Skills earned</h3>
+      </div>
+      <div class="panel-body">
+        <div class="panel-graph js-graph" style="height: 350px;"></div>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -51,6 +62,52 @@ docs: data-visualization
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="stat">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="stat-left">
+                <div class="stat-value is-primary"><span class="ion-person-stalker"></span> 100k +</div>
+                <div class="stat-name">Total users</div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="stat-info">
+                <ul>
+                  <li><strong>0</strong> last 7 days</li>
+                  <li><strong>+130</strong> last month</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="stat">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="stat-left">
+                <div class="stat-value is-warning"><span class="ion-trophy"></span> 14315</div>
+                <div class="stat-name">Total experience</div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="stat-info">
+                <ul>
+                  <li><strong>0</strong> last 7 days</li>
+                  <li><strong>+85</strong> last month</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -68,6 +125,20 @@ docs: data-visualization
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="panel-filters">
+      <% link_to "#", class: "panel-filter is-active" do %>
+        This month
+      <% end %>
+      <% link_to "#", class: "panel-filter" do %>
+        This week
+      <% end %>
+      <% link_to "#", class: "panel-filter" do %>
+        All time
+      <% end %>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

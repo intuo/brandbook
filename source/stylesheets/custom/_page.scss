@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .page {
-  p {
+  > p {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
@@ -12,12 +12,12 @@
     &:last-of-type { margin-bottom: 0; }
   }
 
-  ul {
+  > ul {
     font-size: 18px;
     color: $gray;
   }
 
-  &.page-code p:last-of-type { margin-bottom: 20px; }
+  &.page-code > p:last-of-type { margin-bottom: 20px; }
 
   a {
     font-weight: 600;
