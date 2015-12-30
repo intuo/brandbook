@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(e){e.preventDefault(),$(".user-toggle").toggle()}$(".user-expand").on("click",e)});
