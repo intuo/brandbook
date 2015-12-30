@@ -1,0 +1,39 @@
+//
+// Sandbox
+// --------------------------------------------------
+
+.sandbox {
+  padding: 20px;
+  font-family: "proxima-nova";
+  font-size: 14px;
+  border: 1px solid $gray-lighter;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+
+  .highcharts-legend-item,
+  .highcharts-axis-labels,
+  table[data-sortable] {
+    font-family: "proxima-nova" !important;
+  }
+
+  p,
+  ul,
+  .form-control {
+    font-size: 14px;
+  }
+
+  // Margin patches
+  .stat,
+  .filter,
+  pre,
+  .form-group:last-of-type,
+  .alert {
+    margin-bottom: 0;
+  }
+
+  // Hotfixes
+  > .panel-filters { // This needs to be more modular
+    position: relative;
+    padding: 0;
+  }
+}

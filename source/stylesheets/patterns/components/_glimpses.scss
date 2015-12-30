@@ -1,0 +1,63 @@
+//
+// Glimpses
+// --------------------------------------------------
+
+.glimpse-container { margin-bottom: -25px; }
+
+.glimpse {
+  position: relative;
+  height: 260px;
+  margin-bottom: 25px;
+  background-color: $white-base;
+  border-radius: $border-radius-base;
+
+  &:hover .glimpse-name {
+    text-decoration: none;
+    background-color: lighten($base-border-color, 4);
+  }
+
+  &.is-success { color: $brand-success; }
+  &.is-warning { color: $brand-warning; }
+  &.is-danger { color: $brand-danger; }
+  &.is-default { color: $gray-dark; }
+}
+
+.glimpse-name {
+  display: block;
+  padding: 12px;
+  font-weight: 600;
+  color: $gray-dark;
+  cursor: pointer;
+  border-bottom: 1px solid $gray-lighter;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+}
+
+.glimpse-number {
+  padding: 0 15px;
+  margin-top: 5px;
+  font-size: 45px;
+  font-weight: 300;
+
+  .suffix {
+    font-size: 14px;
+    color: $gray;
+  }
+}
+
+.glimpse-performance {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.glimpse-chart {
+  .highcharts-series { opacity: .4; }
+  .highcharts-markers { display: none; }
+}
+
+.glimpse-stats {
+  position: absolute;
+  bottom: 10px;
+  padding: 0 15px;
+}

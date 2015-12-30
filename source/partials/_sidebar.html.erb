@@ -1,73 +1,108 @@
-<div class="panel panel-default">
+<div class="panel panel-default panel-docs">
+  <h5>General</h5>
   <ul class="list-group">
-    <% link_to "/docs/scaffolding.html",
-      class: current_page.data.docs == "scaffolding" ? "list-group-item active" : "list-group-item" do %>
-      Scaffolding
+    <% link_to "/design/getting-started.html",
+      class: current_page.data.docs == "getting-started" ? "list-group-item active" : "list-group-item" do %>
+      Getting started
     <% end %>
-    <% link_to "/docs/layout.html",
-      class: current_page.data.docs == "layout" ? "list-group-item active" : "list-group-item" do %>
-      Layout
+    <% link_to "/design/voice-and-tone.html",
+      class: current_page.data.docs == "voice-and-tone" ? "list-group-item active" : "list-group-item" do %>
+      Voice and tone
     <% end %>
-    <% link_to "/docs/type.html",
-      class: current_page.data.docs == "type" ? "list-group-item active" : "list-group-item" do %>
-      Type
-    <% end %>
-    <% link_to "/docs/buttons.html",
-      class: current_page.data.docs == "buttons" ? "list-group-item active" : "list-group-item" do %>
-      Buttons
-    <% end %>
-    <% link_to "/docs/forms.html",
-      class: current_page.data.docs == "forms" ? "list-group-item active" : "list-group-item" do %>
-      Forms
-    <% end %>
-    <% link_to "/docs/alerts.html",
-      class: current_page.data.docs == "alerts" ? "list-group-item active" : "list-group-item" do %>
-      Alerts
-    <% end %>
-    <% link_to "/docs/blankslate.html",
-      class: current_page.data.docs == "blankslate" ? "list-group-item active" : "list-group-item" do %>
-      Blankslate
-    <% end %>
-    <% link_to "/docs/avatars.html",
-      class: current_page.data.docs == "avatars" ? "list-group-item active" : "list-group-item" do %>
-      Avatars
-    <% end %>
-    <% link_to "/docs/cards.html",
-      class: current_page.data.docs == "cards" ? "list-group-item active" : "list-group-item" do %>
-      Cards
-    <% end %>
-    <% link_to "/docs/icon-font.html",
-      class: current_page.data.docs == "icon-font" ? "list-group-item active" : "list-group-item" do %>
-      Icon font
-    <% end %>
-    <% link_to "/docs/badges.html",
-      class: current_page.data.docs == "badges" ? "list-group-item active" : "list-group-item" do %>
-      Badges
-    <% end %>
-    <% link_to "/docs/stages.html",
-      class: current_page.data.docs == "stages" ? "list-group-item active" : "list-group-item" do %>
-      Stages
-    <% end %>
-    <% link_to "/docs/tiles.html",
-      class: current_page.data.docs == "tiles" ? "list-group-item active" : "list-group-item" do %>
-      Tiles
-    <% end %>
-    <% link_to "/docs/infographics.html",
-      class: current_page.data.docs == "infographics" ? "list-group-item active" : "list-group-item" do %>
-      Infographics
+    <% link_to "/design/branding-colors.html",
+      class: current_page.data.docs == "branding-colors" ? "list-group-item active" : "list-group-item" do %>
+      Branding colors
     <% end %>
   </ul>
 </div>
 
-<div class="panel panel-default">
+<div class="panel panel-default panel-docs">
+  <h5>Components</h5>
+
   <ul class="list-group">
-    <% link_to "/docs/code-guidelines.html",
-      class: current_page.data.docs == "code-guidelines" ? "list-group-item active" : "list-group-item" do %>
-      Code guidelines
+    <% link_to "/design/data-visualization.html",
+      class: current_page.data.docs == "data-visualization" ? "list-group-item active" : "list-group-item" do %>
+      Data visualization
     <% end %>
-    <% link_to "/docs/colors.html",
-      class: current_page.data.docs == "colors" ? "list-group-item active" : "list-group-item" do %>
-      Colors
+    <% link_to "/design/filters.html",
+      class: current_page.data.docs == "filters" ? "list-group-item active" : "list-group-item" do %>
+      Filters
+    <% end %>
+    <% link_to "/design/typography.html",
+      class: current_page.data.docs == "typography" ? "list-group-item active" : "list-group-item" do %>
+      Typography
+    <% end %>
+    <% link_to "/design/buttons.html",
+      class: current_page.data.docs == "buttons" ? "list-group-item active" : "list-group-item" do %>
+      Buttons
+    <% end %>
+    <% link_to "/design/forms.html",
+      class: current_page.data.docs == "forms" ? "list-group-item active" : "list-group-item" do %>
+      Forms
+    <% end %>
+    <% link_to "/design/alerts.html",
+      class: current_page.data.docs == "alerts" ? "list-group-item active" : "list-group-item" do %>
+      Alerts
+    <% end %>
+    <% link_to "/design/tables.html",
+      class: current_page.data.docs == "tables" ? "list-group-item active" : "list-group-item" do %>
+      Tables
+    <% end %>
+    <% link_to "/design/modals.html",
+      class: current_page.data.docs == "modals" ? "list-group-item active" : "list-group-item" do %>
+      Modals
+    <% end %>
+    <% link_to "/design/quizes.html",
+      class: current_page.data.docs == "quizes" ? "list-group-item active" : "list-group-item" do %>
+      Quizes
+    <% end %>
+    <% link_to "/design/accordion.html",
+      class: current_page.data.docs == "accordion" ? "list-group-item active" : "list-group-item" do %>
+      Accordion
+    <% end %>
+    <% link_to "/design/lists.html",
+      class: current_page.data.docs == "lists" ? "list-group-item active" : "list-group-item" do %>
+      Lists
+    <% end %>
+    <% link_to "/design/tabs.html",
+      class: current_page.data.docs == "tabs" ? "list-group-item active" : "list-group-item" do %>
+      Tabs
+    <% end %>
+    <% link_to "/design/switches.html",
+      class: current_page.data.docs == "switches" ? "list-group-item active" : "list-group-item" do %>
+      Switches
+    <% end %>
+    <% link_to "/design/navigation.html",
+      class: current_page.data.docs == "navigation" ? "list-group-item active" : "list-group-item" do %>
+      Navigation
+    <% end %>
+    <% link_to "/design/boxes.html",
+      class: current_page.data.docs == "boxes" ? "list-group-item active" : "list-group-item" do %>
+      Boxes
+    <% end %>
+    <% link_to "/design/cards.html",
+      class: current_page.data.docs == "cards" ? "list-group-item active" : "list-group-item" do %>
+      Cards
+    <% end %>
+    <% link_to "/design/media.html",
+      class: current_page.data.docs == "media" ? "list-group-item active" : "list-group-item" do %>
+      Media
+    <% end %>
+    <% link_to "/design/swatches.html",
+      class: current_page.data.docs == "swatches" ? "list-group-item active" : "list-group-item" do %>
+      Swatches
+    <% end %>
+    <% link_to "/design/templates.html",
+      class: current_page.data.docs == "templates" ? "list-group-item active" : "list-group-item" do %>
+      Templates
+    <% end %>
+    <% link_to "/design/settings.html",
+      class: current_page.data.docs == "settings" ? "list-group-item active" : "list-group-item" do %>
+      Settings
+    <% end %>
+    <% link_to "/design/states.html",
+      class: current_page.data.docs == "states" ? "list-group-item active" : "list-group-item" do %>
+      States
     <% end %>
   </ul>
 </div>

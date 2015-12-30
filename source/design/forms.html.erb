@@ -1,0 +1,116 @@
+---
+title: Brandbook - Forms
+active: docs
+docs: forms
+---
+
+<div class="page page-code">
+  <h1 class="page-title">Forms</h1>
+
+  <p class="page-description">
+    Style individual form controls and utilize common layouts.
+  </p>
+
+  <h3>Contents</h3>
+
+  <hr>
+
+  <ul>
+    <li><a href="#basic-form">Basic form</a></li>
+    <li><a href="#collapsible-form">Collapsible form</a></li>
+  </ul>
+
+  <h3 class="anchor-container">
+    <a href="#basic-form" class="anchor"><span class="ion-link"></span></a>
+    <a name="basic-form" class="anchor-text"></a>
+    Basic form
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <div class="sandbox">
+    <h5>Edit basic course information</h5>
+
+    <div class="form-group">
+      <label class="control-label">Course title</label>
+      <input type="text" class="form-control" placeholder="Course title" value="An introduction to domain driven development">
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">Course description</label>
+      <p class="help-block">
+        To give a good course description with a clear learning objective,
+        try to complete the following sentence: "After completing this course,
+        learners must be able to...?"
+      </p>
+      <textarea class="form-control" placeholder="Course descripition"></textarea>
+    </div>
+  </div>
+
+  <% code("ruby") do %>
+  def my_cool_method(message)
+    puts message
+  end
+  <% end %>
+
+  <h3 class="anchor-container">
+    <a href="#collapsible-form" class="anchor"><span class="ion-link"></span></a>
+    <a name="collapsible-form" class="anchor-text"></a>
+    Collapsible form
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <div class="sandbox">
+    <div class="row">
+      <div class="form-group">
+        <div class="col-xs-8">
+          <label class="control-label">Paid course</label>
+          <p class="help-block no-margin">
+            Offer this course for sale.
+          </p>
+        </div>
+        <div class="col-xs-4">
+          <div class="toggle">
+            <input class="js-toggle-paid" type="checkbox" data-size="small">
+          </div>
+        </div>
+        <div class="js-paid-content">
+          <div class="col-xs-12">
+            <div class="form-collapse">
+              <div class="form-group">
+                <label class="control-label">Course price (excl. VAT)</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="0">
+                  <span class="input-group-addon is-text">EUR</span>
+                </div>
+              </div>
+
+              <div class="form-group is-last">
+                <label class="control-label">Course discount</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" placeholder="0">
+                  <span class="input-group-addon is-text">%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% code("ruby") do %>
+  def my_cool_method(message)
+    puts message
+  end
+  <% end %>
+</div>

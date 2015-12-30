@@ -1,0 +1,42 @@
+//
+// File inputs
+// --------------------------------------------------
+
+.fileinput {
+  display: block;
+
+  .close { margin-left: 10px; }
+}
+
+.thumbnail {
+  margin-bottom: 15px;
+  background-color: $gray-lighter;
+  border: 0;
+}
+
+.fileinput-preview img {
+  max-height: 145px !important;
+}
+
+.fileinput-new.thumbnail img {
+  max-width: 100%;
+}
+
+.fileinput-new.thumbnail.is-small img {
+  max-height: 80px !important;
+}
+
+.fileinput-new.thumbnail.is-medium img {
+  max-height: 150px !important;
+}
+
+.fileinput-transparent {
+  margin-bottom: -10px;
+  text-align: center;
+
+  .thumbnail {
+    height: 100px;
+    margin-bottom: 10px;
+    background: none;
+  }
+}

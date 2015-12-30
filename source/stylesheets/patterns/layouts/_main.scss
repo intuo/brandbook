@@ -1,0 +1,52 @@
+//
+// Main
+// --------------------------------------------------
+
+.main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 200px;
+  overflow: hidden;
+}
+
+.main-full {
+  padding: 20px;
+  overflow-y: auto;
+  background-color: $body-bg;
+}
+
+.main-master {
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $body-bg;
+  border-right: 1px solid $base-border-color;
+
+  &.no-padding { padding: 0; }
+  &.no-margin { padding: 20px 0; }
+  &.has-margin { margin-top: 40px; } /* Temporary fix, used in email template */
+
+  &.is-white {
+    background-color: $white-base;
+  }
+
+  &.is-light {
+    background-color: $white-base;
+    border-right: 0;
+  }
+}
+
+.main-detail {
+  position: relative;
+  padding: 20px;
+  overflow-y: auto;
+
+  &.no-padding { padding: 0; }
+
+  &.has-background {
+    background-color: $body-bg;
+    border-left: 1px solid $base-border-color;
+  }
+}

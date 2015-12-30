@@ -1,0 +1,204 @@
+//
+// Boxes
+// --------------------------------------------------
+
+.box-container {
+  &:last-of-type {
+    margin-bottom: -15px;
+  }
+}
+
+.box {
+  position: relative;
+  display: block;
+  height: 301px;
+  margin-bottom: 25px;
+  background-color: $white-base;
+  border-radius: $border-radius-base;
+  border: 1px solid $base-border-color;
+
+  &.is-small { height: 273px; }
+  &.box-select { height: 183px; }
+
+  &.is-tiny {
+    height: 235px;
+    text-align: center;
+  }
+
+  &.is-transparent {
+    margin-bottom: 20px;
+
+    .box-badge {
+      padding-bottom: 10px;
+      background: none;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: initial;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:hover {
+    .box-preview { opacity: 1; }
+    .box-overlay { opacity: .3; }
+    .box-meta { opacity: 0; }
+  }
+
+  &.is-selected {
+    border-color: transparent;
+    box-shadow: 0 0 0 1px $brand-success;
+
+    .box-name { color: $brand-success;}
+
+    .box-preview { opacity: 1; }
+
+    .box-overlay {
+      background: $brand-success;
+      opacity: .8;
+    }
+  }
+}
+
+.box-select {
+  cursor: pointer;
+
+  .box-image {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .box-name {
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: $font-size-base;
+    font-weight: 500;
+    color: $gray;
+    text-align: center;
+  }
+
+  .box-preview { padding-top: 5px; }
+  .box-overlay { opacity: .2; }
+}
+
+.box-image {
+  position: relative;
+  height: 140px;
+  color: $white-base;
+  background-color: $brand-primary;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+}
+
+.box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $gray;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+  opacity: .35;
+  transition: all 150ms ease;
+}
+
+.box-preview {
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  font-size: 65px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+.box-content {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+}
+
+.box-meta {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: right;
+  opacity: 1;
+  transition: all 150ms ease;
+}
+
+.box-status {
+  display: inline-block;
+  padding: 4px;
+  margin-left: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  background: rgba($white-base, .1);
+  border: 1px solid rgba($white-base, .7);
+  border-radius: $border-radius-base;
+
+  &.is-filled {
+    color: $gray;
+    text-shadow: none;
+    background: $white-base;
+    border: 1px solid $white-base;
+  }
+}
+
+.box-name {
+  padding: 15px 15px 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: $gray-dark;
+}
+
+.box-description {
+  padding: 0 15px;
+  font-size: 13px;
+  color: lighten($gray, 10);
+}
+
+.box-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  border-top: 1px solid $gray-lighter;
+
+  .progress {
+    margin-bottom: 10px;
+    opacity: .6;
+  }
+
+  .progress-label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray;
+  }
+
+  .box-description {
+    padding: 0;
+  }
+}
+
+.box-badge {
+  padding: 25px;
+  text-align: center;
+  background-color: $gray-lighter;
+
+  img {
+    height: 100px;
+  }
+}

@@ -10,11 +10,11 @@ h1 {
   font-weight: 600;
 }
 
-h3 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 45px;
+.page > h3 {
+  margin-top: 20px !important;
+  margin-bottom: -16px !important;
+  font-weight: 600 !important;
+  border-bottom: 0 !important;
 }
 
 li {
@@ -36,6 +36,10 @@ h3 {
 
   .anchor-text { padding-left: 22px; }
   &:hover .anchor { display: block; }
+}
+
+h4 .icon {
+  color: $brand-primary;
 }
 
 @media only screen and (max-width : 768px){

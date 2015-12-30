@@ -1,0 +1,47 @@
+//
+// Sliders
+// --------------------------------------------------
+
+.slider-full {
+  margin-top: 15px;
+
+  .slider.slider-horizontal {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.slider.slider-horizontal {
+  margin-top: 28px;
+  width: 100%;
+}
+
+.slider-selection {
+  background-color: $brand-primary;
+  background-image: none;
+  box-shadow: none;
+}
+
+.slider.slider-horizontal .slider-handle {
+  margin-top: -9px;
+  background-color: $brand-primary;
+  background-image: none;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+
+  &:active {
+    background-color: $gray-lighter;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
+  }
+}
+
+.slider.slider-horizontal .slider-track {
+  height: 3px;
+  background-color: $gray-light;
+  background-image: none;
+  border-radius: 45px;
+  box-shadow: none;
+}
+
+.slider-selection {
+  border-radius: 45px;
+}

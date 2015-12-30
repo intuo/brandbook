@@ -1,0 +1,38 @@
+//
+// Dropdowns
+// --------------------------------------------------
+
+@import "bootstrap/dropdowns";
+
+.dropdown-center {
+  top: -120px;
+  right: auto;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+.dropdown-menu {
+  li { cursor: pointer; }
+  .icon { margin-right: 5px; }
+}
+
+.dropdown-menu > li > a {
+  color: $gray-dark;
+}
+
+.dropdown-menu > li.dropdown-danger > a {
+  color: $brand-danger;
+}
+
+.dropdown-center {
+  display: block;
+}
+
+.dropdown-center.is-hidden {
+  display: none;
+}
+
+.open > .dropdown-menu.is-hidden {
+  display: block;
+}

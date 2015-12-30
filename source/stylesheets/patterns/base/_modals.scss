@@ -1,0 +1,95 @@
+//
+// Progress
+// --------------------------------------------------
+
+@import "bootstrap/modals";
+
+.modal-backdrop { background-color: darken(desaturate($brand-primary, 30), 50); }
+
+.modal-content {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 15px rgba($gray-base, .25);
+
+  .form-group:last-of-type { margin-bottom: 0; }
+}
+
+.modal-dialog {
+  &.is-small {
+    width: 300px;
+
+    .modal-content { text-align: center; }
+    .modal-footer { text-align: center; }
+    .btn { padding: 9px 33px; }
+  }
+
+  &.is-medium {
+    width: 400px;
+
+    .modal-content { text-align: center; }
+  }
+}
+
+.modal-title {
+  font-weight: 500;
+  color: $gray-darker;
+  text-align: center;
+}
+
+.modal-header {
+  padding: 10px;
+  color: $gray;
+  background-color: $white-base;
+  border-bottom: 1px solid $base-border-color;
+  border-top-right-radius: $border-radius-base;
+  border-top-left-radius: $border-radius-base;
+
+  &.has-bg { background-color: $gray-lighter; }
+
+  .close {
+    margin: 5px 8px 0 0;
+    font-size: 16px;
+    color: $gray;
+    text-shadow: none;
+    outline: 0;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 15px;
+  background-color: $white-base;
+
+  h4 { margin: 0 0 10px; }
+
+  p {
+    color: $gray;
+
+    &:last-of-type { margin-bottom: 0; }
+  }
+
+  .help-text {
+    margin-top: 15px;
+    color: $gray;
+  }
+
+  &.is-header {
+    padding: 20px;
+    border-top-right-radius: $border-radius-base;
+    border-top-left-radius: $border-radius-base;
+  }
+
+  &.is-footer {
+    border-bottom-right-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-base;
+  }
+}
+
+.modal-footer {
+  padding: 15px;
+  background: lighten($gray-lighter, 2%);
+  border-top: 1px solid $base-border-color;
+  border-bottom-right-radius: $border-radius-base;
+  border-bottom-left-radius: $border-radius-base;
+}

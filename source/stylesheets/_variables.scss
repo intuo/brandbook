@@ -10,9 +10,9 @@ $gray-base: #000;
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
 $gray-dark: lighten($gray-base, 20%);
-$gray: lighten($gray-base, 50.5%);
-$gray-light: lighten($gray-base, 60%);
-$gray-lighter: lighten($gray-base, 95.5%);
+$gray: #5876A3;
+$gray-light: #91ABC4;
+$gray-lighter: #F6F8FA;
 
 // Brand colors
 $brand-primary: #427FD0;
@@ -22,11 +22,15 @@ $brand-warning: #FA895D;
 $brand-danger: #EA7C68;
 
 // Typography
-$font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif; // freight-sans-pro
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-size-base: 18px;
-$font-family-base: "proxima-nova";
+$font-size-base: 16px;
+$font-family-base: $font-family-sans-serif;
+
+// Inputs
+$border-radius-base: 3px;
+$base-border-color: darken(#F3F5F6, 5%);
 
 // Grid
 $container-lg: 980px;

@@ -1,0 +1,22 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+@import "bootstrap/scaffolding";
+
+body {
+  overflow: hidden;
+  background: $white-base;
+
+  &.has-bg {
+    background: $body-bg;
+  }
+}
+
+pre {
+  line-height: initial;
+}
+
+a.ember-view {
+  text-decoration: none;
+}

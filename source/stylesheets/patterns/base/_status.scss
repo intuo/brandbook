@@ -1,0 +1,14 @@
+//
+// Status
+// --------------------------------------------------
+
+.status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+}
+
+.status-success { background-color: $brand-success; }
+.status-error { background-color: $brand-danger; }

@@ -1,0 +1,72 @@
+//
+// Popovers
+// --------------------------------------------------
+
+.popover-sidebar {
+  position: absolute;
+  z-index: 10001;
+  width: 200px;
+  padding: 10px;
+  margin: -5px 0 0 10px;
+  overflow: hidden;
+  background: $white-base;
+  border-radius: $border-radius-base;
+  box-shadow: 0 2px 20px rgba($gray-base, .2);
+  user-select: none;
+}
+
+.popover {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin-top: -40px;
+  opacity: 0;
+  transition: height 250ms ease,
+              padding 250ms ease,
+              margin-top 250ms ease,
+              opacity 150ms ease;
+
+  &.active {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin-top: -5px;
+    margin-left: 10px;
+    opacity: 1;
+  }
+}
+
+.popover-link {
+  display: block;
+  padding: 5px;
+  font-weight: 500;
+  color: $gray-dark !important;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: $border-radius-base;
+
+  span {
+    display: inline-block;
+    width: 15px;
+    padding-left: 3px;
+    margin-right: 4px;
+    color: $brand-primary;
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:active {
+    color: $white-base !important;
+    text-decoration: none;
+    background-color: $brand-primary;
+
+    span { color: $white-base; }
+  }
+
+  &:focus {
+    color: $white-base;
+    text-decoration: none;
+
+    span { color: $white-base; }
+  }
+}

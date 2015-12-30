@@ -1,0 +1,24 @@
+//
+// Progress
+// --------------------------------------------------
+
+@import "bootstrap/progress-bars";
+
+.progress-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 45px;
+  box-shadow: none;
+}
+
+.progress-bar { box-shadow: none; }
+
+.progress-stat {
+  display: inline-block;
+  color: lighten($gray, 10);
+}

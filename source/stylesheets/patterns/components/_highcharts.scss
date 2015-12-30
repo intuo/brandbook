@@ -1,0 +1,17 @@
+//
+// Highcharts
+// --------------------------------------------------
+
+.highcharts-legend-item,
+.highcharts-axis-labels {
+  font-family: $font-family-sans-serif;
+}
+
+.highcharts-legend-item text {
+  font-size: $font-size-base !important;
+}
+
+.highcharts-axis-labels text {
+  font-size: 13px !important;
+  font-weight: 500;
+}

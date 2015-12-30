@@ -3,27 +3,38 @@
 // --------------------------------------------------
 
 .page {
-  p {
+  > p {
     margin-bottom: 20px;
+    font-size: 18px;
     line-height: 30px;
+    color: $gray;
 
     &:last-of-type { margin-bottom: 0; }
   }
 
-  &.page-code p:last-of-type { margin-bottom: 20px; }
+  > ul {
+    font-size: 18px;
+    color: $gray;
+  }
+
+  &.page-code > p:last-of-type { margin-bottom: 20px; }
+
+  a {
+    font-weight: 600;
+  }
 }
 
 .page-title {
-  padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid darken($gray-lighter, 3);
+  font-weight: 300;
+  color: $brand-primary;
 }
 
-.page-description {
+p.page-description {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: 400;
-  color: $gray;
+  color: $gray-dark;
 }
 
 @media only screen and (max-width : 768px){

@@ -1,0 +1,230 @@
+//
+// Tables
+// --------------------------------------------------
+
+@import "bootstrap/tables";
+
+table {
+  a:hover { text-decoration: none; }
+}
+
+table[data-sortable] {
+  width: 100%;
+  overflow: hidden;
+  font-family: $font-family-sans-serif !important;
+  font-size: $font-size-base;
+  background: none !important;
+  border-radius: $border-radius-base;
+
+  &.has-margin {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px 5px 9px;
+    margin-left: 8px;
+    text-align: center;
+    border-radius: 100%;
+    outline: 0;
+  }
+
+  &.sortable-theme-bootstrap {
+    th {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      font-weight: 600;
+      color: $gray;
+      background-color: $gray-lighter;
+
+      &.text-success { color: $brand-success; }
+      &.text-warning { color: $brand-warning; }
+      &.text-danger { color: $brand-danger; }
+      &.text-primary { color: $brand-primary; }
+
+      &[data-sorted="true"] {
+        color: $gray !important;
+        background-color: $gray-lighter !important;
+
+        &.text-success { color: $brand-success !important; }
+        &.text-warning { color: $brand-warning !important; }
+        &.text-danger { color: $brand-danger !important; }
+        &.text-primary { color: $brand-primary !important; }
+      }
+    }
+
+    tbody td {
+      border-top: 1px solid $base-border-color;
+    }
+  }
+
+  th {
+    padding: 0 10px 8px;
+    border-bottom-color: $gray-light !important;
+
+    &[data-sortable="false"]:after { display: none; }
+
+    &[data-sorted="true"] {
+      border-color: $gray-light;
+    }
+
+    &[data-sorted-direction="descending"]:after {
+      position: relative;
+      top: -3px;
+      float: none;
+      border-top-color: $gray !important;
+    }
+
+    &[data-sorted-direction="ascending"]:after {
+      position: relative;
+      top: -8px;
+      float: none;
+      border-bottom-color: $gray !important;
+    }
+
+    &.table-filled tbody tr:hover td { background-color: $white-base; }
+  }
+
+  tbody {
+    tr:hover {
+      td { background-color: lighten($body-bg, 2%); }
+      .btn { opacity: 1; }
+
+      .table-number {
+        color: $white-base;
+        background-color: $brand-primary;
+      }
+    }
+
+    tr td:last-child { white-space: nowrap; }
+
+    th.text-right,
+    td.text-right {
+      text-align: right;
+    }
+
+    td {
+      padding: 8px 10px;
+      color: $gray;
+      vertical-align: middle;
+      border-top: 1px solid darken($gray-lighter, 2);
+
+      &.text-success { color: $brand-success; }
+      &.text-warning { color: $brand-warning; }
+      &.text-danger { color: $brand-danger; }
+      &.text-primary { color: $brand-primary; }
+    }
+
+    .btn {
+      opacity: 0;
+      transition: all 150ms ease;
+    }
+
+    a { outline: none; }
+  }
+}
+
+.table-filled {
+  border-radius: $border-radius-base;
+  box-shadow: $shadow-base;
+
+  td { background-color: $white-base; }
+
+  th {
+    padding: 10px !important;
+    border-right: 1px solid $base-border-color !important;
+    border-bottom: 1px solid $base-border-color !important;
+  }
+}
+
+.small-row {
+  width: 1%;
+}
+
+.medium-row {
+  width: 2%;
+}
+
+.table-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+
+  &.has-margin {
+    margin-right: 10px;
+  }
+}
+
+.table-panel {
+  margin-bottom: 0;
+
+  &.has-filter { margin-top: 60px; }
+
+  th {
+    border-top: none !important;
+    border-bottom: 1px solid $base-border-color;
+  }
+
+  td { color: $gray; }
+  .color { margin: -2px 5px 0 0; }
+}
+
+.table-filter {
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  select { width: 200px; }
+}
+
+.table-number {
+  display: inline-block;
+  width: 40px;
+  padding: 5px 12px;
+  font-weight: 500;
+  color: $brand-primary;
+  text-align: center;
+  border: 1px solid $brand-primary;
+  border-radius: $border-radius-base;
+  transition: all 150ms ease;
+}
+
+.table-clickable {
+  tr { cursor: pointer; }
+}
+
+.table-more {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 1px auto 0;
+  font-weight: 500;
+  color: $gray;
+  text-align: center;
+  background: $gray-lighter;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+  box-shadow: 0 1px 1px $gray-lighter;
+
+  &:focus,
+  &:hover,
+  &:active,
+  &:focus:hover {
+    color: $gray;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover {
+    color: $gray;
+    background: lighten($gray-lighter, 2%);
+  }
+
+  &:active {
+    background: darken($gray-lighter, 3%);
+  }
+}

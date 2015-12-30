@@ -1,0 +1,69 @@
+---
+title: Brandbook - Vision
+active: vision
+---
+
+<div class="page">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-title">Vision</h1>
+
+      <p class="page-description">
+        Learn more about the Intuo design patterns and guidelines.
+      </p>
+
+      <h3 class="anchor-container">
+        <a href="#what-and-why" class="anchor"><span class="ion-link"></span></a>
+        <a name="what-and-why" class="anchor-text"></a>
+        What and why
+      </h3>
+
+      <hr>
+
+      <p>
+      The brandbook is Intuo's internal CSS framework.
+      It includes basic global styling for typography,
+      small components like buttons and tabs,
+       and our general guidelines for writing HTML and CSS.
+      </p>
+
+      <p>
+        There’s a lot we can improve upon in the brandbook and feedback is always
+        appreciated. We will occasionally add, remove, or modify things.
+      </p>
+
+
+      <h3 class="anchor-container">
+        <a href="#future-updates" class="anchor"><span class="ion-link"></span></a>
+        <a name="future-updates" class="anchor-text"></a>
+        Future updates
+      </h3>
+
+      <hr>
+
+      <p>
+        See the <%= link_to "roadmap", "/roadmap.html",
+          class: current_page.data.active == "roadmap" ? "active" : "" %> for a
+        rough outline on what’s slated for future versions the brandbook.
+      </p>
+
+      <h3 class="anchor-container">
+        <a href="#dependencies" class="anchor"><span class="ion-link"></span></a>
+        <a name="dependencies" class="anchor-text"></a>
+        Dependencies
+      </h3>
+
+      <hr>
+
+      <ul>
+        <li>Our styles are built with SCSS.</li>
+        <li><a href="https://middlemanapp.com">Middleman</a> is used to serve the GitHub pages.</li>
+        <li><a href="https://github.com/middleman/middleman-syntax">middleman-syntax</a> for code highlighting.</li>
+        <li><a href="https://github.com/rails/turbolinks">turbolinks</a> for rapid page loading.</li>
+        <li>We use our own Intuo icon font alongside of <a href="ionicons.com">Ionicons</a>.</li>
+        <li>Intuo's design framework is built on top of <a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass 3</a>.</li>
+        <li><a href="https://github.com/ai/autoprefixer-rails">Autoprefixer</a> is used to generate vendor-prefixed declarations.</li>
+      </ul>
+    </div>
+  </div>
+</div>

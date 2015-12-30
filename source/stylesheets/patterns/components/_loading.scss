@@ -1,0 +1,84 @@
+//
+// Loading
+// --------------------------------------------------
+
+.loading {
+  cursor: default;
+}
+
+.loading-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  padding-left: 120px;
+  background-color: rgba($white-base, .3);
+}
+
+.loading-spinner {
+  position: relative;
+  top: 50%;
+  font-size: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.loading-side {
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  font-size: $font-size-base;
+  background-color: $brand-primary;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.loading-left {
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-name: left-wing;
+}
+
+.loading-right {
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-name: right-wing;
+}
+
+@keyframes left-wing {
+  0% {
+    opacity: .9;
+    transform: translateY(0) skewY(25deg);
+  }
+
+  50% {
+    opacity: .3;
+    transform: translateY(-10px) skewY(28deg);
+  }
+
+  100% {
+    opacity: .9;
+    transform: translateY(0) skewY(25deg);
+  }
+}
+
+
+@keyframes right-wing {
+  0% {
+    opacity: .3;
+    transform: translateY(0) skewY(-25deg);
+  }
+
+  50% {
+    opacity: .9;
+    transform: translateY(-10px) skewY(-28deg);
+  }
+
+  100% {
+    opacity: .3;
+    transform: translateY(0) skewY(-25deg);
+  }
+}

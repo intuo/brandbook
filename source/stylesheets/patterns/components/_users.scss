@@ -1,0 +1,33 @@
+//
+// Users
+// --------------------------------------------------
+
+.user-list {
+  margin: 2px 0 10px;
+}
+
+.user-link {
+  padding: 2px;
+  margin-right: 2px;
+  color: $gray;
+  text-decoration: none;
+  background: darken($gray-lighter, 2%);
+  border-radius: $border-radius-base;
+
+  &:hover,
+  &:active {
+    color: $white-base;
+    text-decoration: none;
+    background: $brand-primary;
+  }
+}
+
+.user-expand {
+  margin-left: 2px;
+  background: none;
+}
+
+.user-toggle {
+  display: none;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,40 @@
+//
+// Panels
+// --------------------------------------------------
+
+.panel-docs {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 0 !important;
+
+  > .list-group:first-child .list-group-item:first-child {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+  }
+
+  > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  .list-group-item {
+    padding: 0 0 15px 0 !important;
+    color: $gray;
+    border: 0 !important;
+
+    &:hover {
+      color: $brand-primary;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+      background: none !important;
+    }
+  }
+
+  .list-group {
+    font-size: $font-size-base;
+  }
+}

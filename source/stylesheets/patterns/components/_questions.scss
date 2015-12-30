@@ -1,0 +1,43 @@
+//
+// Questions
+// --------------------------------------------------
+
+.question-group {
+  padding: 0 5px;
+  margin-bottom: 20px;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.question-title {
+  margin: 10px;
+  font-weight: 500;
+  color: $brand-primary;
+}
+
+.question-answer {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid $base-border-color;
+  border-radius: $border-radius-base;
+
+  span { display: none; }
+
+  &.is-wrong { text-decoration: line-through; }
+
+  &.active {
+    color: $brand-success;
+
+    .ion-close { display: none; }
+    .ion-checkmark { display: inline-block; }
+
+    &.is-wrong {
+      color: $brand-danger;
+
+      .ion-close { display: inline-block; }
+      .ion-checkmark { display: none; }
+    }
+  }
+}
