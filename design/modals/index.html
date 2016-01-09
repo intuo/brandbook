@@ -301,7 +301,7 @@
 </a><a class="list-group-item" href="/brandbook/design/lists/">      Lists
 </a><a class="list-group-item" href="/brandbook/design/tabs/">      Tabs
 </a><a class="list-group-item" href="/brandbook/design/switches/">      Switches
-</a><a class="list-group-item" href="/brandbook/design/navigation/">      Navigation
+</a><a class="list-group-item" href="/brandbook/design/actions/">      Actions
 </a><a class="list-group-item" href="/brandbook/design/boxes/">      Boxes
 </a><a class="list-group-item" href="/brandbook/design/cards/">      Cards
 </a><a class="list-group-item" href="/brandbook/design/media/">      Media
@@ -327,13 +327,14 @@
   <hr>
 
   <ul>
-    <li><a href="#basic-example">Basic example</a></li>
+    <li><a href="#modal">Modal</a></li>
+    <li><a href="#confirm-deletion">Confirm deletion</a></li>
   </ul>
 
   <h3 class="anchor-container">
-    <a href="#basic-example" class="anchor"><span class="ion-link"></span></a>
-    <a name="basic-example" class="anchor-text"></a>
-    Basic example
+    <a href="#modal" class="anchor"><span class="ion-link"></span></a>
+    <a name="modal" class="anchor-text"></a>
+    Modal
   </h3>
 
   <hr>
@@ -341,6 +342,58 @@
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-close-round"></span></button>
+          <h4 class="modal-title" id="myModalLabel">Edit topic</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="control-label">Name</label>
+            <input type="text" class="form-control" placeholder="Name" value="Leadership">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="n">message</span>
+  <span class="k">end</span>
+</code></pre>
+
+  <h3 class="anchor-container">
+    <a href="#confirm-deletion" class="anchor"><span class="ion-link"></span></a>
+    <a name="confirm-deletion" class="anchor-text"></a>
+    Confirm deletion
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <div class="sandbox">
+    <div class="modal-dialog is-small" role="document">
+      <div class="modal-content">
+        <div class="modal-body is-header">
+          <h4>Are you sure?</h4>
+          <p>This action cannot be undone.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Delete</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="n">message</span>

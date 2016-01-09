@@ -301,7 +301,7 @@
 </a><a class="list-group-item" href="/brandbook/design/lists/">      Lists
 </a><a class="list-group-item" href="/brandbook/design/tabs/">      Tabs
 </a><a class="list-group-item" href="/brandbook/design/switches/">      Switches
-</a><a class="list-group-item" href="/brandbook/design/navigation/">      Navigation
+</a><a class="list-group-item" href="/brandbook/design/actions/">      Actions
 </a><a class="list-group-item" href="/brandbook/design/boxes/">      Boxes
 </a><a class="list-group-item" href="/brandbook/design/cards/">      Cards
 </a><a class="list-group-item active" href="/brandbook/design/media/">      Media
@@ -327,9 +327,39 @@
   <hr>
 
   <ul>
+    <li><a href="#drag-to-upload">Drag to upload</a></li>
     <li><a href="#upload">Upload</a></li>
     <li><a href="#upload-preview">Upload preview</a></li>
   </ul>
+
+  <h3 class="anchor-container">
+    <a href="#drag-to-upload" class="anchor"><span class="ion-link"></span></a>
+    <a name="drag-to-upload" class="anchor-text"></a>
+    Drag to upload
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <div class="sandbox">
+    <div class="upload-drag">
+      <div class="upload-instructions">
+        <div class="icon ion-upload"></div>
+        <p>Drag files to upload</p>
+      </div>
+    </div>
+    <div class="upload-button">
+<a class="btn btn-default btn-block btn-cta" href="#">        Choose file
+</a>    </div>
+  </div>
+
+<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="n">message</span>
+  <span class="k">end</span>
+</code></pre>
 
   <h3 class="anchor-container">
     <a href="#upload" class="anchor"><span class="ion-link"></span></a>
@@ -342,6 +372,11 @@
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <label for="image-upload" class="btn btn-default btn-file btn-block">Change image</label>
+    <input id="image-upload" type="file" style="display: none;width:1px;">
+  </div>
 
 <pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="n">message</span>
@@ -359,6 +394,15 @@
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="fileinput-new thumbnail is-medium">
+      <img src="http://s3.eu-central-1.amazonaws.com/intuo-assets/development-intuo/clients/landing_backgrounds/000/000/001/original/data?1450860961">
+    </div>
+    <label for="image-upload" class="btn btn-default btn-file btn-block">Change image</label>
+    <button class="btn btn-danger btn-file btn-block">Remove image</button>
+    <input id="image-upload" type="file" style="display: none;width:1px;">
+  </div>
 
 <pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="n">message</span>
