@@ -16,9 +16,42 @@ docs: media
   <hr>
 
   <ul>
+    <li><a href="#drag-to-upload">Drag to upload</a></li>
     <li><a href="#upload">Upload</a></li>
     <li><a href="#upload-preview">Upload preview</a></li>
   </ul>
+
+  <h3 class="anchor-container">
+    <a href="#drag-to-upload" class="anchor"><span class="ion-link"></span></a>
+    <a name="drag-to-upload" class="anchor-text"></a>
+    Drag to upload
+  </h3>
+
+  <hr>
+
+  <p>
+    Lorem ipsum
+  </p>
+
+  <div class="sandbox">
+    <div class="upload-drag">
+      <div class="upload-instructions">
+        <div class="icon ion-upload"></div>
+        <p>Drag files to upload</p>
+      </div>
+    </div>
+    <div class="upload-button">
+      <% link_to "#", class: "btn btn-default btn-block btn-cta" do %>
+        Choose file
+      <% end %>
+    </div>
+  </div>
+
+  <% code("ruby") do %>
+  def my_cool_method(message)
+    puts message
+  end
+  <% end %>
 
   <h3 class="anchor-container">
     <a href="#upload" class="anchor"><span class="ion-link"></span></a>
@@ -31,6 +64,11 @@ docs: media
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <label for="image-upload" class="btn btn-default btn-file btn-block">Change image</label>
+    <input id="image-upload" type="file" style="display: none;width:1px;">
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)
@@ -49,6 +87,15 @@ docs: media
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="fileinput-new thumbnail is-medium">
+      <img src="http://s3.eu-central-1.amazonaws.com/intuo-assets/development-intuo/clients/landing_backgrounds/000/000/001/original/data?1450860961">
+    </div>
+    <label for="image-upload" class="btn btn-default btn-file btn-block">Change image</label>
+    <button class="btn btn-danger btn-file btn-block">Remove image</button>
+    <input id="image-upload" type="file" style="display: none;width:1px;">
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

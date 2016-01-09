@@ -36,6 +36,90 @@ docs: quizes
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">Multiple choice</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question" value="What is the capital of Paris?">
+      </div>
+      <div class="quiz-content">
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option" value="Bordeaux">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option" value="Nice">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer is-selected">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option" value="Paris">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option" value="">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-add">
+          <% link_to "#", class: "btn btn-default" do %>
+            <span class="icon ion-plus"></span>
+            Add more
+          <% end %>
+        </div>
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "#", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "#", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -53,6 +137,90 @@ docs: quizes
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">All that apply</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question">
+      </div>
+      <div class="quiz-content">
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <input type="text" class="form-control" placeholder="Add answer option">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="quiz-add">
+          <% link_to "#", class: "btn btn-default" do %>
+            <span class="icon ion-plus"></span>
+            Add more
+          <% end %>
+        </div>
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)
@@ -72,6 +240,31 @@ docs: quizes
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">Match</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question">
+      </div>
+      <div class="quiz-content">
+        <% link_to "/admin/studio/certificates/match.html", class: "btn btn-block btn-primary" do %>
+          Edit/view question
+        <% end %>
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -89,6 +282,60 @@ docs: quizes
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">Fill in blank</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question">
+      </div>
+      <div class="quiz-content">
+        <p class="help-block">Every time you type <code>{__}</code> in your question, a new blank answer will appear. Using the example below, two blank answer fields will appear.</p>
+        <div class="quiz-example">
+          <code>Intuo is a {__} company based in {__}.</code>
+        </div>
+        <div class="quiz-answer">
+          <div class="quiz-body is-full has-margin">
+            <input type="text" class="form-control" placeholder="Add answer option">
+          </div>
+          <div class="quiz-actions">
+            <% link_to "#", class: "btn btn-primary is-icon" do %>
+              <span class="icon ion-trash-a"></span>
+            <% end %>
+          </div>
+        </div>
+        <div class="quiz-filter">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-size="mini"> Order of answers matter
+                </label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-size="mini"> Case sensitive
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)
@@ -108,6 +355,45 @@ docs: quizes
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">True/false</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question">
+      </div>
+      <div class="quiz-content">
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-text">True</div>
+          </div>
+        </div>
+
+        <div class="quiz-answer">
+          <div class="quiz-label">
+            <span class="icon ion-checkmark"></span>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-text">False</div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -125,6 +411,26 @@ docs: quizes
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="quiz-question">
+      <div class="quiz-name">
+        <div class="quiz-title js-quiz-name">Open answer</div>
+        <input type="text" class="form-control js-quiz-name" placeholder="Enter a question">
+      </div>
+      <div class="quiz-footer">
+        <% link_to "#", class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add video
+        <% end %>
+        <% link_to "/admin/studio/certificates/media.html", class: "btn btn-default" do %>
+          Add audio / PDF
+        <% end %>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

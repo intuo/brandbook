@@ -27,7 +27,12 @@
   .filter,
   pre,
   .form-group:last-of-type,
-  .alert {
+  .alert,
+  .switch,
+  .box,
+  .card,
+  .card:last-of-type,
+  .card-tabs li {
     margin-bottom: 0;
   }
 
@@ -36,4 +41,20 @@
     position: relative;
     padding: 0;
   }
+
+  .btn-lg {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    border-radius: 2px;
+  }
+
+  .nav-tabs {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+  }
+
+  .card-item.is-event .move { margin-top: 0; }
 }

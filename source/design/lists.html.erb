@@ -16,13 +16,13 @@ docs: lists
   <hr>
 
   <ul>
-    <li><a href="#basic-example">Basic example</a></li>
+    <li><a href="#list">List</a></li>
   </ul>
 
   <h3 class="anchor-container">
-    <a href="#basic-example" class="anchor"><span class="ion-link"></span></a>
-    <a name="basic-example" class="anchor-text"></a>
-    Basic example
+    <a href="#list" class="anchor"><span class="ion-link"></span></a>
+    <a name="list" class="anchor-text"></a>
+    List
   </h3>
 
   <hr>
@@ -30,6 +30,34 @@ docs: lists
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="list">
+      <div class="list-item">
+        <%= image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/tomaslau/128.jpg", class: "list-avatar" %>
+        <div class="list-name">
+          <a href="#">Demo account</a>
+        </div>
+        <div class="list-actions">
+          <% link_to "#", class: "btn btn-danger" do %>
+            <span class="ion-trash-a"></span>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="list-item">
+        <%= image_tag "https://s3.amazonaws.com/uifaces/faces/twitter/tomaslau/128.jpg", class: "list-avatar" %>
+        <div class="list-name">
+          <a href="#">Demo account</a>
+        </div>
+        <div class="list-actions">
+          <% link_to "#", class: "btn btn-danger" do %>
+            <span class="ion-trash-a"></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

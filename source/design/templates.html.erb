@@ -31,6 +31,21 @@ docs: templates
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="template-container">
+      <div class="template-image">
+        <div class="content">
+          <p>Modern</p>
+          <% link_to "/admin/studio/certificates/change_template.html", class: "btn btn-outline btn-cta" do %>
+            Change template
+          <% end %>
+        </div>
+        <div class="overlay"></div>
+        <img src="https://demo.intuo.io/assets/certificate-default-3f3fdc103a703308b82221859fd4126267bb78ecf9676e12252e0036149c56e8.png">
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message

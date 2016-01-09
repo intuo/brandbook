@@ -33,6 +33,37 @@ docs: cards
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="card is-general active js-edit-course">
+      <div class="card-overlay">
+        <div class="title">An introduction to domain driven development</div>
+        <div class="description">
+          No coding necessary. Now anybody can get data they need in minutes.
+          This is a game changer for sales &amp; marketing.
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-background" style="background-image:url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bfb59a246c6092ff0daabd284b);"></div>
+        <div class="card-cover">
+          <div class="card-meta">
+            <div class="card-status">
+              <span class="ion-earth"></span> Published
+            </div>
+            <div class="card-status">
+              <span class="ion-card"></span> Paid
+            </div>
+            <div class="card-status is-filled">
+              <span class="ion-pricetag"></span> Marketing
+            </div>
+            <div class="card-status is-filled">
+              <span class="ion-pricetag"></span> Sales
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -51,6 +82,56 @@ docs: cards
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <div class="card clearfix">
+      <% link_to "#", class: "js-edit-stage card-title" do %>
+        <p class="dropdown ion-android-arrow-dropdown"></p>
+        <div class="card-text">Advanced financial accounting</div>
+        <div class="pull-right">
+          <span class="status status-error"></span>
+          <p class="move ion-arrow-move"></p>
+        </div>
+      <% end %>
+      <div class="card-items">
+        <% link_to "#", class: "js-edit-video card-item" do %>
+          <p class="icon ion-ios-videocam"></p>
+          <p class="title">1. The accounting equation notes template</p>
+          <div class="pull-right">
+             <span class="status status-error"></span>
+            <p class="move ion-arrow-move"></p>
+          </div>
+        <% end %>
+
+        <% link_to "#", class: "js-edit-video card-item" do %>
+          <p class="icon ion-ios-videocam"></p>
+          <p class="title">2. Financial statements</p>
+          <p class="move ion-arrow-move"></p>
+        <% end %>
+
+        <% link_to "#", class: "js-edit-video card-item" do %>
+          <p class="icon ion-ios-videocam"></p>
+          <p class="title">3. The trial balance</p>
+          <p class="move ion-arrow-move"></p>
+        <% end %>
+      </div>
+      <div class="card-button">
+        <div class="btn-group btn-block" role="group">
+          <% link_to "#", class: "btn btn-lg btn-block btn-success dropdown-toggle", data: {toggle: "dropdown"} do %>
+            <span class="icon ion-plus"></span>
+            Add new step
+          <% end %>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-center is-hidden">
+            <li><a href="#">Session</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Image</a></li>
+            <li><a href="#">Slide</a></li>
+            <li><a href="#">Video</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -68,6 +149,129 @@ docs: cards
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <div class="card clearfix">
+      <% link_to "#", class: "js-edit-stage card-title" do %>
+        <p class="dropdown ion-android-arrow-dropdown"></p>
+        <div class="card-text"><span class="icon ion-android-calendar"></span> Student meetup at BusinessCon Antwerp</div>
+        <p class="move ion-arrow-move"></p>
+      <% end %>
+      <div class="card-tabs">
+        <ul>
+          <li class="active">
+            <% link_to "#", class: "js-tab-dayplanner" do %>
+              Planning
+            <% end %>
+          </li>
+          <li>
+            <% link_to "#", class: "js-tab-sessions" do %>
+              Sessions
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="js-content-dayplanner">
+        <div class="card-items">
+          <% link_to "#", class: "js-edit-text card-item" do %>
+            <p class="icon ion-clock"></p>
+            <p class="title">1. Using GitHub</p>
+            <p class="move ion-arrow-move"></p>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-session-step card-item" do %>
+            <p class="icon ion-clock"></p>
+            <p class="title">2. Setting Up SQL tools</p>
+            <div class="pull-right">
+               <span class="status status-error"></span>
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-video card-item" do %>
+            <p class="icon ion-clock"></p>
+            <p class="title">3. Managing dotfiles</p>
+            <p class="move ion-arrow-move"></p>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-slide card-item clearfix" do %>
+            <p class="icon ion-clock"></p>
+            <p class="title">4. Using continuous deployment in Rails</p>
+            <div class="pull-right">
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-quiz card-item clearfix" do %>
+            <p class="icon ion-clock"></p>
+            <p class="title">5. Using SQL Pro</p>
+            <div class="pull-right">
+               <span class="status status-error"></span>
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+        </div>
+        <div class="card-button">
+          <div class="btn-group btn-block" role="group">
+            <% link_to "#", class: "btn btn-lg btn-block btn-success" do %>
+              <span class="icon ion-plus"></span>
+              Add new activity
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="js-content-sessions">
+        <div class="card-items">
+          <% link_to "#", class: "js-edit-session card-item is-event clearfix" do %>
+            <p class="icon ion-calendar"></p>
+            <p class="title">
+              December 20, 2016
+            </p>
+            <p class="subtitle">
+              From 19:00 to 20:00
+            </p>
+            <div class="pull-right">
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-session card-item is-event clearfix" do %>
+            <p class="icon ion-calendar"></p>
+            <p class="title">
+              December 20, 2016
+            </p>
+            <p class="subtitle">
+              From 19:00 to 20:00
+            </p>
+            <div class="pull-right">
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+
+          <% link_to "#", class: "js-edit-session card-item is-event clearfix" do %>
+            <p class="icon ion-calendar"></p>
+            <p class="title">
+              December 20, 2016
+            </p>
+            <p class="subtitle">
+              From 19:00 to 20:00
+            </p>
+            <div class="pull-right">
+              <p class="move ion-arrow-move"></p>
+            </div>
+          <% end %>
+        </div>
+        <div class="card-button">
+          <div class="btn-group btn-block" role="group">
+            <% link_to "#", class: "btn btn-lg btn-block btn-success" do %>
+              <span class="icon ion-plus"></span>
+              Add new session
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

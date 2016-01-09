@@ -32,6 +32,18 @@ docs: boxes
     Lorem ipsum
   </p>
 
+  <div class="sandbox">
+    <% link_to "#", class: "box is-tiny", data: {toggle: "modal", target: "#newBadge"} do %>
+      <div class="box-badge">
+        <img src="https://d1hjqqz7n2clc.cloudfront.net/demo-intuo/badges/images/000/000/005/original/Copy_of_badge36.png?1442143979">
+      </div>
+      <div class="box-name">Closing journal entries</div>
+      <div class="box-description">
+        No description
+      </div>
+    <% end %>
+  </div>
+
   <% code("ruby") do %>
   def my_cool_method(message)
     puts message
@@ -49,6 +61,34 @@ docs: boxes
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <% link_to "/admin/studio/courses/edit.html", class: "box is-small" do %>
+      <div class="box-image" style="background-image:url(https://images.unsplash.com/photo-1436390195361-c3c86efcf48b?q=80&fm=jpg&s=83c70e431591016a40829aea30a83069);">
+        <div class="box-preview">
+          <span class="icon ion-ios-eye-outline"></span>
+        </div>
+        <div class="box-overlay"></div>
+        <div class="box-meta">
+          <div class="box-status">
+            Published
+          </div>
+          <div class="box-status">
+            Paid
+          </div>
+          <div class="box-status is-filled">
+            NL
+          </div>
+        </div>
+      </div>
+      <div class="box-name">Basic statistics and probability</div>
+      <div class="box-bottom">
+        <div class="box-description">
+          <span class="icon ion-refresh"></span> Last updated <strong>13 hours ago</strong>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)

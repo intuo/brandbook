@@ -16,13 +16,13 @@ docs: tabs
   <hr>
 
   <ul>
-    <li><a href="#basic-example">Basic example</a></li>
+    <li><a href="#tabs">Tabs</a></li>
   </ul>
 
   <h3 class="anchor-container">
-    <a href="#basic-example" class="anchor"><span class="ion-link"></span></a>
-    <a name="basic-example" class="anchor-text"></a>
-    Basic example
+    <a href="#tabs" class="anchor"><span class="ion-link"></span></a>
+    <a name="tabs" class="anchor-text"></a>
+    Tabs
   </h3>
 
   <hr>
@@ -30,6 +30,35 @@ docs: tabs
   <p>
     Lorem ipsum
   </p>
+
+  <div class="sandbox">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation">
+        <% link_to "/admin/reports/courses/dashboard.html" do %>
+          <span class="ion-pie-graph"></span>
+          Overview
+        <% end %>
+      </li>
+      <li role="presentation" class="active">
+        <% link_to "/admin/reports/courses/manage_students/overview.html" do %>
+          <span class="ion-person-stalker"></span>
+          Manage Students
+        <% end %>
+      </li>
+      <li role="presentation">
+        <% link_to "/admin/reports/courses/content_engagement.html" do %>
+          <span class="ion-stats-bars"></span>
+          Course engagement
+        <% end %>
+      </li>
+      <li role="presentation">
+        <% link_to "/admin/reports/courses/student_statistics.html" do %>
+          <span class="ion-university"></span>
+          Student statistics
+        <% end %>
+      </li>
+    </ul>
+  </div>
 
   <% code("ruby") do %>
   def my_cool_method(message)
