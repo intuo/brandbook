@@ -18,10 +18,73 @@ docs: getting-started
 
   <ul>
     <li><a href="#what-and-why">What and why?</a></li>
-    <li><a href="#dependencies">Dependencies</a></li>
     <li><a href="#thinking-in-components">Thinking in components</a></li>
-    <li><a href="#scalable-and-modular-scss-architecture">Scalable and modular SCSS architecture</a></li>
+    <li><a href="#html-architecture">HTML architecture</a></li>
+    <li><a href="#scalable-and-modular-scss">Scalable and modular SCSS</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
   </ul>
+
+  <h3 class="anchor-container">
+    <a href="#html-architecture" class="anchor"><span class="ion-link"></span></a>
+    <a name="html-architecture" class="anchor-text"></a>
+    HTML architecture
+  </h3>
+
+  <hr>
+
+  <h5>General formatting</h5>
+
+  <ul>
+    <li>
+      Use soft-tabs with a two space indent. Spaces are the only way to
+      guarantee code renders the same in any person’s environment.
+    </li>
+    <li>
+      Paragraphs of text should always be placed in a <code>&lt;p&gt;</code> tag. Never use multiple <code>&lt;br&gt;</code> tags.
+    </li>
+    <li>
+      Every form input that has text attached should utilize a <code>&lt;label&gt;</code> tag. Especially radio or checkbox elements.
+    </li>
+    <li>
+      Even though quotes around attributes is optional, always put quotes around attributes for readability.
+    </li>
+    <li>
+      Avoid trailing slashes in self-closing elements. For example, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;input&gt;</code>.
+    </li>
+  </ul>
+
+  <h5>Slimming down elements</h5>
+
+  <p>
+    Whenever possible, avoid superfluous parent elements when writing HTML.
+    Many times this requires iteration and refactoring, but produces less HTML. For example:
+  </p>
+
+  <% code("html") do %>
+  <!-- Not so great -->
+  <span class="avatar">
+    <img src="...">
+  </span>
+
+  <!-- Better -->
+  <img class="avatar" src="...">
+  <% end %>
+
+  <h5>Boolean attributes</h5>
+
+  <p>
+    Many attributes don’t require a value to be set, like disabled or checked, so don’t set them.
+  </p>
+
+  <% code("html") do %>
+  <input type="text" disabled>
+
+  <input type="checkbox" value="1" checked>
+
+  <select>
+    <option value="1" selected>1</option>
+  </select>
+  <% end %>
 
   <h3 class="anchor-container">
     <a href="#what-and-why" class="anchor"><span class="ion-link"></span></a>
@@ -44,6 +107,249 @@ docs: getting-started
   </p>
 
   <h3 class="anchor-container">
+    <a href="#thinking-in-components" class="anchor"><span class="ion-link"></span></a>
+    <a name="thinking-in-components" class="anchor-text"></a>
+    Thinking in components
+  </h3>
+
+  <hr>
+
+  <p>
+    We believe that every design component should be re-usable, or at least carefully
+    documented what it's specific purpose is. Rather than introducing new components,
+    try to figure out what problem you're solving, and how it can be solved using
+    existing patterns.
+  </p>
+
+  <h3 class="anchor-container">
+    <a href="#scalable-and-modular-scss" class="anchor"><span class="ion-link"></span></a>
+    <a name="scalable-and-modular-scss" class="anchor-text"></a>
+    Scalable and modular SCSS
+  </h3>
+
+  <hr>
+
+  <p>References:</p>
+
+  <ul>
+    <li><a href="http://primercss.io/guidelines/#scss">Github Primer</a></li>
+    <li><a href="http://thesassway.com/beginner/how-to-structure-a-sass-project">How to structure a Sass project</a></li>
+  </ul>
+
+  <hr>
+
+  <h5>Spacing</h5>
+
+  <ul>
+    <li>
+      Use soft-tabs with a two space indent.
+      Spaces are the only way to guarantee code renders the same in any person’s environment.
+    </li>
+    <li>
+      Put spaces after <code>:</code> in property declarations.
+    </li>
+    <li>
+      Put spaces before <code>{</code> in rule declarations.
+    </li>
+    <li>
+      Put line breaks between rulesets.
+    </li>
+    <li>
+      When grouping selectors, keep individual selectors to a single line.
+    </li>
+    <li>
+      Place closing braces of declaration blocks on a new line.
+    </li>
+    <li>
+      Each declaration should appear on its own line for more accurate error reporting.
+    </li>
+  </ul>
+
+  <h5>Formatting</h5>
+
+  <ul>
+    <li>
+      Use hex color codes <code>#000</code> unless using <code>rgba()</code> in raw CSS (SCSS’ <code>rgba()</code> function is overloaded to accept hex colors as a param, e.g., <code>rgba(#000, .5))</code>.
+    </li>
+    <li>
+      Use <code>//</code> for comment blocks (instead of <code>/* */</code>).
+    </li>
+    <li>
+      Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of margin: 0px;.
+    </li>
+    <li>
+      Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values.
+    </li>
+  </ul>
+
+  <h5>Misc</h5>
+
+  <p>
+    As a rule of thumb, avoid unnecessary nesting in SCSS.
+    At most, aim for three levels. If you cannot help it,
+    step back and rethink your overall strategy
+    (either the specificity needed, or the layout of the nesting).
+  </p>
+
+  <h5>Examples</h5>
+
+  <p>
+    Here are some good examples that apply the above guidelines:
+  </p>
+
+  <% code("scss") do %>
+  // Example of good basic formatting practices
+  .styleguide-format {
+    color: #000;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #0f0;
+  }
+
+  // Example of individual selectors getting their own lines (for error reporting)
+  .multiple,
+  .classes,
+  .get-new-lines {
+    display: block;
+  }
+
+  // Avoid unnecessary shorthand declarations
+  .not-so-good {
+    margin: 0 0 20px;
+  }
+  .good {
+    margin-bottom: 20px;
+  }
+  <% end %>
+
+  <h5>Class name conventions</h5>
+
+  <p>
+    Never reference <code>js-</code> prefixed class names from CSS files. <code>js-</code> are used exclusively from JS files.
+    Use the <code>is-</code> prefix for state rules that are shared between CSS and JS.
+  </p>
+
+  <h5>Specificity</h5>
+
+  <p>
+    When styling a component, start with an element + class namespace
+    (prefer class names over ids), prefer direct descendant selectors by default,
+    and use as little specificity as possible. Here is a good example:
+  </p>
+
+  <% code("html") do %>
+  <ul class="category-list">
+    <li class="item">Category 1</li>
+    <li class="item">Category 2</li>
+    <li class="item">Category 3</li>
+  </ul>
+  <% end %>
+
+  <% code("scss") do %>
+  .category-list { // element + class namespace
+
+    // Direct descendant selector > for list items
+    > li {
+      list-style-type: disc;
+    }
+
+    // Minimal specificity for all links
+    a {
+      color: #f00;
+    }
+  }
+  <% end %>
+
+  <h5>CSS Specificity guidelines</h5>
+
+  <ul>
+    <li>
+      When modifying an existing element for a specific use, try to use specific class names. Instead of <code>.listings-layout.bigger</code> use rules like <code>.listings-layout.listings-bigger</code>. Think about ack/greping your code in the future.
+    </li>
+    <li>
+      The class names <code>disabled</code>, <code>mousedown</code>, <code>danger</code>, <code>hover</code>, <code>selected</code>, and <code>active</code> should always be namespaced by a class (button.selected is a good example).
+    </li>
+  </ul>
+
+  <h5>File organization</h5>
+
+  <p>
+    We're using a <a href="http://thesassway.com/beginner/how-to-structure-a-sass-project">SCSS module</a>
+    based file organisation, to keep our files tidy. The <code>base</code> directory contains inherited bootstrap
+    classes, the <code>components</code> directory contains custom Intuo modules.
+    The <code>layout</code> directory contains files that only affects the application's strucutre.
+  </p>
+
+  <% code("markdown") do %>
+  stylesheets (62)
+  ├── base (18)
+  │   ├── _alerts.scss
+  │   ├── _button-groups.scss
+  │   ├── _buttons.scss
+  │   ├── _dropdowns.scss
+  │   ├── _forms.scss
+  │   ├── _grid.scss
+  │   ├── _input-groups.scss
+  │   ├── _modals.scss
+  │   ├── _navs.scss
+  │   ├── _panels.scss
+  │   ├── _progress.scss
+  │   ├── _scaffolding.scss
+  │   ├── _sliders.scss
+  │   ├── _status.scss
+  │   ├── _tables.scss
+  │   ├── _tooltip.scss
+  │   ├── _type.scss
+  │   └── _wells.scss
+  ├── components (41)
+  │   ├── _accordion.scss
+  │   ├── _actions.scss
+  │   ├── _activities.scss
+  │   ├── _advanced.scss
+  │   ├── _area.scss
+  │   ├── _avatars.scss
+  │   ├── _boxes.scss
+  │   ├── _canvas.scss
+  │   ├── _colors.scss
+  │   ├── _editor.scss
+  │   ├── _engagement.scss
+  │   ├── _errors.scss
+  │   ├── _fileinputs.scss
+  │   ├── _filters.scss
+  │   ├── _glimpses.scss
+  │   ├── _highcharts.scss
+  │   ├── _lists.scss
+  │   ├── _loading.scss
+  │   ├── _logo.scss
+  │   ├── _matches.scss
+  │   ├── _media.scss
+  │   ├── _menu.scss
+  │   ├── _popovers.scss
+  │   ├── _profile.scss
+  │   ├── _questions.scss
+  │   ├── _quizes.scss
+  │   ├── _reviews.scss
+  │   ├── _select.scss
+  │   ├── _settings.scss
+  │   ├── _slides.scss
+  │   ├── _speedometers.scss
+  │   ├── _stats.scss
+  │   ├── _switches.scss
+  │   ├── _templates.scss
+  │   ├── _timelines.scss
+  │   ├── _toggles.scss
+  │   ├── _translate.scss
+  │   ├── _uploads.scss
+  │   ├── _users.scss
+  │   └── _wizard.scss
+  ├── layouts (3)
+  │   ├── _main.scss
+  │   ├── _navigation.scss
+  │   └── _sidebar.scss
+  ├── _variables.scss
+  └── application.scss
+  <% end %>
+
+  <h3 class="anchor-container">
     <a href="#dependencies" class="anchor"><span class="ion-link"></span></a>
     <a name="dependencies" class="anchor-text"></a>
     Dependencies
@@ -60,28 +366,4 @@ docs: getting-started
     <li>Intuo's design framework is built on top of <a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass 3</a>.</li>
     <li><a href="https://github.com/ai/autoprefixer-rails">Autoprefixer</a> is used to generate vendor-prefixed declarations.</li>
   </ul>
-
-  <h3 class="anchor-container">
-    <a href="#thinking-in-components" class="anchor"><span class="ion-link"></span></a>
-    <a name="thinking-in-components" class="anchor-text"></a>
-    Thinking in components
-  </h3>
-
-  <hr>
-
-  <p>
-    Work in progress.
-  </p>
-
-  <h3 class="anchor-container">
-    <a href="#scalable-and-modular-scss-architecture" class="anchor"><span class="ion-link"></span></a>
-    <a name="scalable-and-modular-scss-architecture" class="anchor-text"></a>
-    Scalable and modular SCSS architecture
-  </h3>
-
-  <hr>
-
-  <p>
-    Work in progress.
-  </p>
 </div>
