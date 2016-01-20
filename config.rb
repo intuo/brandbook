@@ -19,7 +19,6 @@ sprockets.import_asset "chosen/chosen.jquery.min.js"
 sprockets.import_asset "chosen/chosen.min.css"
 
 page "/design/*", layout: "docs"
-page "/vision.html", layout: "page"
 page "/about.html", layout: "page"
 page "/roadmap.html", layout: "page"
 

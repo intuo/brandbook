@@ -8,7 +8,7 @@ docs: buttons
   <h1 class="page-title">Buttons</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    The primary method of triggering events in the user interface.
   </p>
 
   <h3>Contents</h3>
@@ -29,21 +29,23 @@ docs: buttons
   <hr>
 
   <p>
-    Lorem ipsum
+    Although there are more colors available to use, it doesn't make sense to have a
+    wide spectrum of colors for more or less the same type of actions.
+    The color of a button must match the context in which it is used, as illustrated in the example below.
   </p>
 
   <div class="sandbox">
-    <a href="#" class="btn btn-default">Default</a>
-    <a href="#" class="btn btn-success">Success</a>
-    <a href="#" class="btn btn-warning">Warning</a>
-    <a href="#" class="btn btn-danger">Danger</a>
-    <a href="#" class="btn btn-info">Info</a>
+    <a href="#" class="btn btn-default">Change badge</a>
+    <a href="#" class="btn btn-success">Publish</a>
+    <a href="#" class="btn btn-danger">Delete account</a>
+    <a href="#" class="btn btn-primary">Upload image</a>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <a href="#" class="btn btn-default">Change badge</a>
+  <a href="#" class="btn btn-success">Publish</a>
+  <a href="#" class="btn btn-danger">Delete account</a>
+  <a href="#" class="btn btn-primary">Upload image</a>
   <% end %>
 
   <h3 class="anchor-container">
@@ -55,29 +57,45 @@ docs: buttons
   <hr>
 
   <p>
-    Lorem ipsum
+    Dropdown buttons should provide a meaningful action. The expected behavior is that the
+    action of the button changes to the selected option.
   </p>
 
   <div class="sandbox">
     <div class="btn-group">
       <a class="btn btn-default" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Actions
+        <span class="icon ion-android-done"></span> Attending
         <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
         <li>
-          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-done"></span> Present</a>
+          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-done"></span> Attending</a>
         </li>
         <li>
-          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-close"></span> Absent</a>
+          <a href="#" data-toggle="modal" data-target="#presence"><span class="icon ion-android-close"></span> Not going</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="btn-group">
+    <a class="btn btn-default" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="icon ion-android-done"></span> Attending
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="#" data-toggle="modal">
+          <span class="icon ion-android-done"></span> Attending
+        </a>
+      </li>
+      <li>
+        <a href="#" data-toggle="modal">
+          <span class="icon ion-android-close"></span> Not going
+        </a>
+      </li>
+    </ul>
+  </div>
   <% end %>
 </div>
