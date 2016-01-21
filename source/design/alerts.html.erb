@@ -8,7 +8,7 @@ docs: alerts
   <h1 class="page-title">Alerts</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Inform the user in a meaningful and constrictive way.
   </p>
 
   <h3>Contents</h3>
@@ -29,22 +29,43 @@ docs: alerts
   <hr>
 
   <p>
-    Lorem ipsum
+    Errors messages provide a descriptive list of instructions for the user
+    to solve a problem detected by the system.
   </p>
 
+  <blockquote>
+    Try to keep the variations of alerts as low as possible. You want the user
+    the recognize a system message immediately, without too much cognitive load.
+  </blockquote>
+
   <div class="sandbox">
-    <div class="alert alert-danger">
+    <div class="alert alert-danger has-margin-bottom">
       <ul>
         <li>Complete your question in the quiz</li>
         <li>The certificate name can't be blank</li>
       </ul>
     </div>
+    <div class="alert alert-warning has-margin-bottom">
+      No courses yet, <a href="#">create one</a>.
+    </div>
+    <div class="alert alert-success">
+      Settings saved successfully.
+    </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="alert alert-success">
+    Settings saved successfully.
+  </div>
+  <div class="alert alert-danger">
+    <ul>
+      <li>Complete your question in the quiz</li>
+      <li>The certificate name can't be blank</li>
+    </ul>
+  </div>
+  <div class="alert alert-warning">
+    No courses yet, <a href="#">create one</a>.
+  </div>
   <% end %>
 
   <h3 class="anchor-container">
@@ -56,7 +77,8 @@ docs: alerts
   <hr>
 
   <p>
-    Lorem ipsum
+    For some specific use cases you may want to add a call to action to your alert.
+    This pattern will be deprecated in a future update, so it's not adviced to rely on it.
   </p>
 
   <div class="sandbox">
@@ -73,9 +95,16 @@ docs: alerts
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="alert alert-warning has-button clearfix">
+    <div class="pull-left">
+      <p>Last updated at September 13 2015, 11:33:16am.</p>
+    </div>
+    <div class="pull-right text-right">
+      <button class="btn btn-success">
+        <span class="icon ion-refresh"></span>Update data
+      </button>
+    </div>
+  </div>
   <% end %>
 </div>

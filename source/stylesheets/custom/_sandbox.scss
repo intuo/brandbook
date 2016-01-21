@@ -38,11 +38,17 @@
     margin-bottom: 0;
   }
 
+  .list { margin-top: 0; }
+
   // Hotfixes
   .setting-content.no-border {
     padding-top: 0;
     margin-top: 0;
     border-top: 0;
+  }
+
+  .alert.has-margin-bottom {
+    margin-bottom: 20px;
   }
 
   .loading-backdrop {

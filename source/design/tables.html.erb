@@ -8,7 +8,7 @@ docs: tables
   <h1 class="page-title">Tables</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Displaying structured sets of data.
   </p>
 
   <h3>Contents</h3>
@@ -30,7 +30,9 @@ docs: tables
   <hr>
 
   <p>
-    Lorem ipsum
+    The basic table is the most commonly used pattern in Intuo. Because of it's great flexibility it's often tempting
+    to overload the table with data, and thereby making it less useful. Always try to keep the number of columns to a bare minumum and
+    prefer to show in-depth information on a detail page.
   </p>
 
   <div class="sandbox">
@@ -88,10 +90,51 @@ docs: tables
     </table>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <table class="sortable-theme-bootstrap table-filled" data-sortable>
+    <thead>
+      <tr>
+        <th data-sortable="false" class="small-row"></th>
+        <th data-sortable="true" data-sorted="true" data-sorted-direction="descending">Course title</th>
+        <th data-sortable="true" data-sorted-direction="descending">Completion rate</th>
+        <th data-sortable="true" data-sorted-direction="descending">Avg. progression rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="color color-success is-small"></span></td>
+        <td>
+          <a href="#">Affiliate marketing</a>
+        </td>
+        <td>0.00%</td>
+        <td>58.00%</td>
+      </tr>
+      <tr>
+        <td><span class="color color-success is-small"></span></td>
+        <td>
+          <a href="#">Cisco CCNA</a>
+        </td>
+        <td>29.00%</td>
+        <td>53.00%</td>
+      </tr>
+      <tr>
+        <td><span class="color color-default is-small"></span></td>
+        <td>
+          <a href="#">Closing more sales</a>
+        </td>
+        <td>10.00%</td>
+        <td>56%</td>
+      </tr>
+      <tr>
+        <td><span class="color color-default is-small"></span></td>
+        <td>
+          <a href="#">Product Expert</a>
+        </td>
+        <td>0.00%</td>
+        <td>0.00%</td>
+      </tr>
+    </tbody>
+  </table>
   <% end %>
 
   <h3 class="anchor-container">
@@ -103,7 +146,7 @@ docs: tables
   <hr>
 
   <p>
-    Lorem ipsum
+    Borderless tables are primarily used in the media library. They should be used for listing rich media content.
   </p>
 
   <div class="sandbox">
@@ -238,10 +281,137 @@ docs: tables
     </table>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <table data-sortable>
+    <thead>
+      <tr>
+        <th data-sortable="false" data-sorted="false" class="small-row"></th>
+        <th data-sortable="true" data-sorted="true" data-sorted-direction="descending">Name</th>
+        <th data-sortable="true" data-sorted="true" data-sorted-direction="descending">Duration</th>
+        <th data-sortable="true" data-sorted="true" data-sorted-direction="descending">Status</th>
+        <th data-sortable="false" data-sorted="false"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="media-file is-selected">
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://images.unsplash.com/photo-1443479579455-1860f114bf77?q=80&fm=jpg&s=dc7000360dec6e5368d1ed3e4d0b38ae">
+          </div>
+        </td>
+        <td>
+          <a href="#">
+            Flatten surface.mp4
+          </a>
+        </td>
+        <td>
+          2:00
+        </td>
+        <td>
+          <div class="media-status is-ready">
+            <span class="icon icon-ready ion-checkmark"></span>
+            <span class="icon icon-processing ion-upload"></span>
+          </div>
+        </td>
+        <td class="text-right">
+          <a class="btn btn-default">
+            <span class="ion-forward"></span>
+          </a>
+          <a class="btn btn-danger">
+            <span class="ion-trash-a"></span>
+          </a>
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?q=80&fm=jpg&s=7728059c0751fd7df335656ba33789d3">
+          </div>
+        </td>
+        <td>
+          <a href="#">
+            Constructing diagonal splines.mp4
+          </a>
+        </td>
+        <td>
+          1:30
+        </td>
+        <td>
+          <div class="media-status is-processing">
+            <span class="icon icon-ready ion-checkmark"></span>
+            <span class="icon icon-processing ion-upload"></span>
+          </div>
+        </td>
+        <td class="text-right">
+          <a class="btn btn-default">
+            <span class="ion-forward"></span>
+          </a>
+          <a class="btn btn-danger">
+            <span class="ion-trash-a"></span>
+          </a>
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://images.unsplash.com/photo-1439546743462-802cabef8e97?q=80&fm=jpg&s=510f72180ea7448a0cb0f92cf626c66d">
+          </div>
+        </td>
+        <td>
+          <a href="#">
+            Environmental energy.mp4
+          </a>
+        </td>
+        <td>
+          4:50
+        </td>
+        <td>
+          <div class="media-status is-ready">
+            <span class="icon icon-ready ion-checkmark"></span>
+            <span class="icon icon-processing ion-upload"></span>
+          </div>
+        </td>
+        <td class="text-right">
+          <a class="btn btn-default">
+            <span class="ion-forward"></span>
+          </a>
+          <a class="btn btn-danger">
+            <span class="ion-trash-a"></span>
+          </a>
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://images.unsplash.com/photo-1437936251057-dfbf79980ce5?q=80&fm=jpg&s=f1de0b33eebe1e84fd7c833eca464968">
+          </div>
+        </td>
+        <td>
+          <a href="#">
+            Aerodynamica basics.mp4
+          </a>
+        </td>
+        <td>
+          4:10
+        </td>
+        <td>
+          <div class="media-status is-processing">
+            <span class="icon icon-ready ion-checkmark"></span>
+            <span class="icon icon-processing ion-upload"></span>
+          </div>
+        </td>
+        <td class="text-right">
+          <a class="btn btn-default">
+            <span class="ion-forward"></span>
+          </a>
+          <a class="btn btn-danger">
+            <span class="ion-trash-a"></span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
   <% end %>
 
   <h3 class="anchor-container">
@@ -253,7 +423,7 @@ docs: tables
   <hr>
 
   <p>
-    Lorem ipsum
+    When selecting one or more options from a list of content, use a checkbox table.
   </p>
 
   <div class="sandbox">
@@ -310,8 +480,6 @@ docs: tables
           <td>
             Product Configuration
           </td>
-          <td>
-          </td>
         </tr>
         <tr class="media-file">
           <td class="small-row">
@@ -332,9 +500,77 @@ docs: tables
     </table>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <table class="sortable-theme-bootstrap table-filled" data-sortable>
+    <thead>
+      <tr>
+        <th data-sortable="false" data-sorted="false" class="small-row"></th>
+        <th data-sortable="false" data-sorted="false" class="small-row"></th>
+        <th data-sortable="true" data-sorted="true" data-sorted-direction="descending">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="media-file is-selected">
+        <td class="small-row">
+          <div class="media-checkbox">
+            <span class="icon ion-checkmark"></span>
+          </div>
+        </td>
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://assets.intuo.io/demo-intuo/badges/images/000/000/012/original/Copy_of_badge47.png?1442143979">
+          </div>
+        </td>
+        <td>
+          An Introduction to Web Scraping
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-checkbox">
+            <span class="icon ion-checkmark"></span>
+          </div>
+        </td>
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://assets.intuo.io/demo-intuo/badges/images/000/000/008/original/Copy_of_badge19.png?1442143979">
+          </div>
+        </td>
+        <td>
+          Connector Basics: Creating a PR News Dashboard of top industry blogs
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-checkbox">
+            <span class="icon ion-checkmark"></span>
+          </div>
+        </td>
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://assets.intuo.io/demo-intuo/badges/images/000/000/005/original/Copy_of_badge36.png?1442143979">
+          </div>
+        </td>
+        <td>
+          Product Configuration
+        </td>
+      </tr>
+      <tr class="media-file">
+        <td class="small-row">
+          <div class="media-checkbox">
+            <span class="icon ion-checkmark"></span>
+          </div>
+        </td>
+        <td class="small-row">
+          <div class="media-screenshot">
+            <img src="https://assets.intuo.io/demo-intuo/badges/images/000/000/004/original/Copy_of_badge97.png?1442143978">
+          </div>
+        </td>
+        <td>
+          Working With Trello
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <% end %>
 </div>

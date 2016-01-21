@@ -1,10 +1,6 @@
 <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-    <% link_to "/design/getting-started.html",
-      class: current_page.data.docs == "getting-started" ? "list-group-item active" : "list-group-item" do %>
-      Getting started
-    <% end %>
     <% link_to "/design/voice-and-tone.html",
       class: current_page.data.docs == "voice-and-tone" ? "list-group-item active" : "list-group-item" do %>
       Voice and tone
@@ -12,6 +8,10 @@
     <% link_to "/design/branding-colors.html",
       class: current_page.data.docs == "branding-colors" ? "list-group-item active" : "list-group-item" do %>
       Branding colors
+    <% end %>
+    <% link_to "/design/frontend-guidelines.html",
+      class: current_page.data.docs == "frontend-guidelines" ? "list-group-item active" : "list-group-item" do %>
+      Frontend guidelines
     <% end %>
   </ul>
 </div>

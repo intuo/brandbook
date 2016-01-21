@@ -8,8 +8,12 @@ docs: filters
   <h1 class="page-title">Filters</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Sorting and searching data.
   </p>
+
+  <div class="alert alert-warning">
+    <span class="ion-quote"></span> This pattern will be revised soon.
+  </div>
 
   <h3>Contents</h3>
 
@@ -29,7 +33,7 @@ docs: filters
   <hr>
 
   <p>
-    Lorem ipsum
+    The search box is used to search in large amounts of data in tables, or different kinds of lists.
   </p>
 
   <div class="sandbox">
@@ -49,10 +53,21 @@ docs: filters
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="filter">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="filter-left">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <span class="ion-search"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <% end %>
 
   <h3 class="anchor-container">
@@ -64,13 +79,14 @@ docs: filters
   <hr>
 
   <p>
-    Lorem ipsum
+    A search box can be combined with a dropdown menu. UI-wise you should opt for a maximum
+    of 4 filters per page.
   </p>
 
   <div class="sandbox">
     <div class="filter">
       <div class="row">
-        <div class="col-xs-5">
+        <div class="col-xs-6">
           <div class="filter-left">
             <div class="input-group">
               <span class="input-group-addon">
@@ -80,7 +96,7 @@ docs: filters
             </div>
           </div>
         </div>
-        <div class="col-xs-7">
+        <div class="col-xs-6">
           <div class="filter-right">
             <div class="filter-select">
               <select data-placeholder="Sort by" class="chosen-select" tabindex="-1">
@@ -98,9 +114,34 @@ docs: filters
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="filter">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="filter-left">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <span class="ion-search"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="filter-right">
+          <div class="filter-select">
+            <select data-placeholder="Sort by" class="chosen-select" tabindex="-1">
+              <option selected>All certificates</option>
+              <option>Product expert</option>
+              <option>New marketing hire</option>
+              <option>New accounting hire</option>
+              <option>Sales onboarding</option>
+              <option>Senior</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <% end %>
 </div>

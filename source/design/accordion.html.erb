@@ -8,7 +8,7 @@ docs: accordion
   <h1 class="page-title">Accordion</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Show/hide operation of multiple sections in a list.
   </p>
 
   <h3>Contents</h3>
@@ -28,7 +28,7 @@ docs: accordion
   <hr>
 
   <p>
-    Lorem ipsum
+    Accordions are used to reveal detailed information of a list item.
   </p>
 
   <div class="sandbox">
@@ -84,9 +84,56 @@ docs: accordion
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="accordion">
+    <h6>Stage 1</h6>
+
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <div class="row">
+          <div class="col-xs-12">
+            Affiliate network navigation
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="accordion-meta">
+                <span class="arrow is-closed ion-android-arrow-dropright"></span>
+                <span class="arrow is-open ion-android-arrow-dropdown"></span>
+                <span class="icon ion-ios-videocam"></span>
+                <span class="name">The affiliate marketer profile</span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="accordion-stat">
+                <p class="value">100</p>
+                <p class="name">Plays</p>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="accordion-stat">
+                <p class="value">100</p>
+                <p class="name">Watched</p>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="accordion-stat">
+                <p class="value">100</p>
+                <p class="name">Engagement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-content">
+          accordion content
+        </div>
+      </div>
+    </div>
+  </div>
   <% end %>
 </div>

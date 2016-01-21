@@ -34,10 +34,16 @@ docs: data-visualization
     Areacharts and linecharts are used to visualize the growth of data over time.
   </p>
 
+  <blockquote>
+    The graph library of choice is <a href="http://www.highcharts.com/">Highcharts</a>.
+    As mentioned in the <%= link_to "frontend guidelines", "/design/frontend-guidelines.html" %>
+    we use a Javascript specific selector <code>js-graph</code> to initialze Highchart on the element.
+  </blockquote>
+
   <div class="sandbox">
     <div class="panel panel-default panel-transparent">
       <div class="panel-heading">
-        <h3 class="panel-title">Skills earned</h3>
+        <h3 class="panel-title">Skills over time</h3>
       </div>
       <div class="panel-body">
         <div class="panel-graph js-graph" style="height: 350px;"></div>
@@ -45,10 +51,8 @@ docs: data-visualization
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="js-graph" style="height: 350px;"></div>
   <% end %>
 
   <h3 class="anchor-container">
@@ -60,8 +64,14 @@ docs: data-visualization
   <hr>
 
   <p>
-    Lorem ipsum
+    Statistic cards are used to show the current and past total of a specific data set.
+    They always have current value, and a comparison of growth over time.
   </p>
+
+  <blockquote>
+    The color of the statistics can be altered by altering the modifier of <code>stat-value</code>
+    to e.g. <code>is-warning</code>. Additional color codes can be found in <%= link_to "frontend guidelines", "/design/branding-colors.html" %>.
+  </blockquote>
 
   <div class="sandbox">
     <div class="row">
@@ -109,10 +119,25 @@ docs: data-visualization
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <div class="stat">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="stat-left">
+          <div class="stat-value is-primary"><span class="ion-person-stalker"></span> 100k +</div>
+          <div class="stat-name">Total users</div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="stat-info">
+          <ul>
+            <li><strong>0</strong> last 7 days</li>
+            <li><strong>+130</strong> last month</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <% end %>
 
   <h3 class="anchor-container">
@@ -124,16 +149,21 @@ docs: data-visualization
   <hr>
 
   <p>
-    Lorem ipsum
+    Filters are mandatory for charts, but optional for tables. Filtering should be
+    solely limited to <strong>This week</strong>, <strong>This month</strong> and <strong>All time</strong>.
   </p>
+
+  <blockquote>
+    The active state of a panel-filter is <code>is-active</code>.
+  </blockquote>
 
   <div class="sandbox">
     <div class="panel-filters">
-      <% link_to "#", class: "panel-filter is-active" do %>
-        This month
-      <% end %>
       <% link_to "#", class: "panel-filter" do %>
         This week
+      <% end %>
+      <% link_to "#", class: "panel-filter is-active" do %>
+        This month
       <% end %>
       <% link_to "#", class: "panel-filter" do %>
         All time
@@ -141,9 +171,9 @@ docs: data-visualization
     </div>
   </div>
 
-  <% code("ruby") do %>
-  def my_cool_method(message)
-    puts message
-  end
+  <% code("html") do %>
+  <button class="panel-filter is-active">This week</button>
+  <button class="panel-filter">This month</button>
+  <button class="panel-filter">All time</button>
   <% end %>
 </div>
