@@ -260,8 +260,7 @@
       <div class="col-sm-9">
         <div class="header-navigation">
           <ul>
-            <li><a class="" href="/brandbook/vision/">Vision</a></li>
-            <li><a class="active" href="/brandbook/design/getting-started/">Design</a></li>
+            <li><a class="active" href="/brandbook/design/voice-and-tone/">Design</a></li>
             <li><a class="" href="/brandbook/roadmap/">Roadmap</a></li>
           </ul>
         </div>
@@ -278,9 +277,9 @@
             <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-<a class="list-group-item" href="/brandbook/design/getting-started/">      Getting started
-</a><a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
+<a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
 </a><a class="list-group-item" href="/brandbook/design/branding-colors/">      Branding colors
+</a><a class="list-group-item" href="/brandbook/design/frontend-guidelines/">      Frontend guidelines
 </a>  </ul>
 </div>
 
@@ -319,7 +318,8 @@
   <h1 class="page-title">Data visualization</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Presenting data visually to uncover surprising patterns and observations
+    that wouldn't be apparent from looking at stats alone.
   </p>
 
   <h3>Contents</h3>
@@ -341,13 +341,19 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Areacharts and linecharts are used to visualize the growth of data over time.
   </p>
+
+  <blockquote>
+    The graph library of choice is <a href="http://www.highcharts.com/">Highcharts</a>.
+    As mentioned in the <a href="/brandbook/design/frontend-guidelines/">frontend guidelines</a>
+    we use a Javascript specific selector <code>js-graph</code> to initialze Highchart on the element.
+  </blockquote>
 
   <div class="sandbox">
     <div class="panel panel-default panel-transparent">
       <div class="panel-heading">
-        <h3 class="panel-title">Skills earned</h3>
+        <h3 class="panel-title">Skills over time</h3>
       </div>
       <div class="panel-body">
         <div class="panel-graph js-graph" style="height: 350px;"></div>
@@ -355,9 +361,7 @@
     </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"js-graph"</span> <span class="na">style=</span><span class="s">"height: 350px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre>
 
   <h3 class="anchor-container">
@@ -369,8 +373,14 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Statistic cards are used to show the current and past total of a specific data set.
+    They always have current value, and a comparison of growth over time.
   </p>
+
+  <blockquote>
+    The color of the statistics can be altered by altering the modifier of <code>stat-value</code>
+    to e.g. <code>is-warning</code>. Additional color codes can be found in <a href="/brandbook/design/branding-colors/">frontend guidelines</a>.
+  </blockquote>
 
   <div class="sandbox">
     <div class="row">
@@ -418,9 +428,24 @@
     </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat-left"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat-value is-primary"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"ion-person-stalker"</span><span class="nt">&gt;&lt;/span&gt;</span> 100k +<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat-name"</span><span class="nt">&gt;</span>Total users<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stat-info"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;strong&gt;</span>0<span class="nt">&lt;/strong&gt;</span> last 7 days<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;strong&gt;</span>+130<span class="nt">&lt;/strong&gt;</span> last month<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
   <h3 class="anchor-container">
@@ -432,20 +457,25 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Filters are mandatory for charts, but optional for tables. Filtering should be
+    solely limited to <strong>This week</strong>, <strong>This month</strong> and <strong>All time</strong>.
   </p>
+
+  <blockquote>
+    The active state of a panel-filter is <code>is-active</code>.
+  </blockquote>
 
   <div class="sandbox">
     <div class="panel-filters">
-<a class="panel-filter is-active" href="#">        This month
-</a><a class="panel-filter" href="#">        This week
+<a class="panel-filter" href="#">        This week
+</a><a class="panel-filter is-active" href="#">        This month
 </a><a class="panel-filter" href="#">        All time
 </a>    </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"panel-filter is-active"</span><span class="nt">&gt;</span>This week<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"panel-filter"</span><span class="nt">&gt;</span>This month<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"panel-filter"</span><span class="nt">&gt;</span>All time<span class="nt">&lt;/button&gt;</span>
 </code></pre>
 </div>
 

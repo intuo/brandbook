@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width">
-    <title>Brandbook - Getting started</title>
+    <title>Brandbook - Frontend Guidelines</title>
     <link href="/brandbook/images/favicon.png" rel="icon" type="image/png" />
     <style>
       .highlight table td { padding: 5px; }
@@ -260,8 +260,7 @@
       <div class="col-sm-9">
         <div class="header-navigation">
           <ul>
-            <li><a class="" href="/brandbook/vision/">Vision</a></li>
-            <li><a class="active" href="/brandbook/design/getting-started/">Design</a></li>
+            <li><a class="active" href="/brandbook/design/voice-and-tone/">Design</a></li>
             <li><a class="" href="/brandbook/roadmap/">Roadmap</a></li>
           </ul>
         </div>
@@ -278,9 +277,9 @@
             <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-<a class="list-group-item active" href="/brandbook/design/getting-started/">      Getting started
-</a><a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
+<a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
 </a><a class="list-group-item" href="/brandbook/design/branding-colors/">      Branding colors
+</a><a class="list-group-item active" href="/brandbook/design/frontend-guidelines/">      Frontend guidelines
 </a>  </ul>
 </div>
 
@@ -316,11 +315,16 @@
 
           <div class="col-sm-9">
             <div class="page page-code">
-  <h1 class="page-title">Getting started</h1>
+  <h1 class="page-title">Frontend guidelines</h1>
 
   <p class="page-description">
-    Here's all you need to know before you get started. Take a look at how we
-    do things at Intuo Design.
+    Bootstrap is a comprihensive and useful SCSS framework, which we use as our main foundation.
+    But because of Bootstrap's overall large size, it's important
+    to maintain an consistent project structure in order to the frontend development running smoothly.
+    Our frontend guidelines are primarly based on the
+    <a href="http://primercss.io/guidelines/#scss">SCSS guidelines</a> created by
+    <a href="https://twitter.com/mdo">@mdo</a> at Github.
+
   </p>
 
   <h3>Contents</h3>
@@ -328,9 +332,9 @@
   <hr>
 
   <ul>
+    <li><a href="#html-architecture">HTML architecture</a></li>
     <li><a href="#what-and-why">What and why?</a></li>
     <li><a href="#thinking-in-components">Thinking in components</a></li>
-    <li><a href="#html-architecture">HTML architecture</a></li>
     <li><a href="#scalable-and-modular-scss">Scalable and modular SCSS</a></li>
     <li><a href="#dependencies">Dependencies</a></li>
   </ul>
@@ -435,15 +439,6 @@
     <a name="scalable-and-modular-scss" class="anchor-text"></a>
     Scalable and modular SCSS
   </h3>
-
-  <hr>
-
-  <p>References:</p>
-
-  <ul>
-    <li><a href="http://primercss.io/guidelines/#scss">Github Primer</a></li>
-    <li><a href="http://thesassway.com/beginner/how-to-structure-a-sass-project">How to structure a Sass project</a></li>
-  </ul>
 
   <hr>
 
@@ -657,7 +652,7 @@
   <h3 class="anchor-container">
     <a href="#dependencies" class="anchor"><span class="ion-link"></span></a>
     <a name="dependencies" class="anchor-text"></a>
-    Dependencies
+    Brandbook dependencies
   </h3>
 
   <hr>

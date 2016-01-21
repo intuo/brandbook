@@ -260,8 +260,7 @@
       <div class="col-sm-9">
         <div class="header-navigation">
           <ul>
-            <li><a class="" href="/brandbook/vision/">Vision</a></li>
-            <li><a class="active" href="/brandbook/design/getting-started/">Design</a></li>
+            <li><a class="active" href="/brandbook/design/voice-and-tone/">Design</a></li>
             <li><a class="" href="/brandbook/roadmap/">Roadmap</a></li>
           </ul>
         </div>
@@ -278,9 +277,9 @@
             <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-<a class="list-group-item" href="/brandbook/design/getting-started/">      Getting started
-</a><a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
+<a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
 </a><a class="list-group-item" href="/brandbook/design/branding-colors/">      Branding colors
+</a><a class="list-group-item" href="/brandbook/design/frontend-guidelines/">      Frontend guidelines
 </a>  </ul>
 </div>
 
@@ -319,7 +318,7 @@
   <h1 class="page-title">Tables</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Displaying structured sets of data.
   </p>
 
   <h3>Contents</h3>
@@ -341,7 +340,9 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    The basic table is the most commonly used pattern in Intuo. Because of it's great flexibility it's often tempting
+    to overload the table with data, and thereby making it less useful. Always try to keep the number of columns to a bare minumum and
+    prefer to show in-depth information on a detail page.
   </p>
 
   <div class="sandbox">
@@ -391,9 +392,50 @@
     </table>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"sortable-theme-bootstrap table-filled"</span> <span class="na">data-sortable</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Course title<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Completion rate<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Avg. progression rate<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;span</span> <span class="na">class=</span><span class="s">"color color-success is-small"</span><span class="nt">&gt;&lt;/span&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Affiliate marketing<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>0.00%<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>58.00%<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;span</span> <span class="na">class=</span><span class="s">"color color-success is-small"</span><span class="nt">&gt;&lt;/span&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cisco CCNA<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>29.00%<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>53.00%<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;span</span> <span class="na">class=</span><span class="s">"color color-default is-small"</span><span class="nt">&gt;&lt;/span&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Closing more sales<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>10.00%<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>56%<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;&lt;span</span> <span class="na">class=</span><span class="s">"color color-default is-small"</span><span class="nt">&gt;&lt;/span&gt;&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Product Expert<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>0.00%<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>0.00%<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
 </code></pre>
 
   <h3 class="anchor-container">
@@ -405,7 +447,7 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Borderless tables are primarily used in the media library. They should be used for listing rich media content.
   </p>
 
   <div class="sandbox">
@@ -516,9 +558,136 @@
     </table>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;table</span> <span class="na">data-sortable</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"false"</span> <span class="na">data-sorted=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Duration<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Status<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"false"</span> <span class="na">data-sorted=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file is-selected"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://images.unsplash.com/photo-1443479579455-1860f114bf77?q=80&amp;fm=jpg&amp;s=dc7000360dec6e5368d1ed3e4d0b38ae"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            Flatten surface.mp4
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          2:00
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-status is-ready"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-ready ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-processing ion-upload"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-forward"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-trash-a"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?q=80&amp;fm=jpg&amp;s=7728059c0751fd7df335656ba33789d3"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            Constructing diagonal splines.mp4
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          1:30
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-status is-processing"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-ready ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-processing ion-upload"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-forward"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-trash-a"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://images.unsplash.com/photo-1439546743462-802cabef8e97?q=80&amp;fm=jpg&amp;s=510f72180ea7448a0cb0f92cf626c66d"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            Environmental energy.mp4
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          4:50
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-status is-ready"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-ready ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-processing ion-upload"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-forward"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-trash-a"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://images.unsplash.com/photo-1437936251057-dfbf79980ce5?q=80&amp;fm=jpg&amp;s=f1de0b33eebe1e84fd7c833eca464968"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            Aerodynamica basics.mp4
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          4:10
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-status is-processing"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-ready ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-processing ion-upload"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-forward"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ion-trash-a"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+
 </code></pre>
 
   <h3 class="anchor-container">
@@ -530,7 +699,7 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    When selecting one or more options from a list of content, use a checkbox table.
   </p>
 
   <div class="sandbox">
@@ -587,8 +756,6 @@
           <td>
             Product Configuration
           </td>
-          <td>
-          </td>
         </tr>
         <tr class="media-file">
           <td class="small-row">
@@ -609,9 +776,77 @@
     </table>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"sortable-theme-bootstrap table-filled"</span> <span class="na">data-sortable</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;thead&gt;</span>
+      <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"false"</span> <span class="na">data-sorted=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"false"</span> <span class="na">data-sorted=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;&lt;/th&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">data-sortable=</span><span class="s">"true"</span> <span class="na">data-sorted=</span><span class="s">"true"</span> <span class="na">data-sorted-direction=</span><span class="s">"descending"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/thead&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file is-selected"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://assets.intuo.io/demo-intuo/badges/images/000/000/012/original/Copy_of_badge47.png?1442143979"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          An Introduction to Web Scraping
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://assets.intuo.io/demo-intuo/badges/images/000/000/008/original/Copy_of_badge19.png?1442143979"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          Connector Basics: Creating a PR News Dashboard of top industry blogs
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://assets.intuo.io/demo-intuo/badges/images/000/000/005/original/Copy_of_badge36.png?1442143979"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          Product Configuration
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"media-file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-checkmark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"small-row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-screenshot"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://assets.intuo.io/demo-intuo/badges/images/000/000/004/original/Copy_of_badge97.png?1442143978"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>
+          Working With Trello
+        <span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
 </code></pre>
 </div>
 

@@ -260,8 +260,7 @@
       <div class="col-sm-9">
         <div class="header-navigation">
           <ul>
-            <li><a class="" href="/brandbook/vision/">Vision</a></li>
-            <li><a class="active" href="/brandbook/design/getting-started/">Design</a></li>
+            <li><a class="active" href="/brandbook/design/voice-and-tone/">Design</a></li>
             <li><a class="" href="/brandbook/roadmap/">Roadmap</a></li>
           </ul>
         </div>
@@ -278,9 +277,9 @@
             <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-<a class="list-group-item" href="/brandbook/design/getting-started/">      Getting started
-</a><a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
+<a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
 </a><a class="list-group-item" href="/brandbook/design/branding-colors/">      Branding colors
+</a><a class="list-group-item" href="/brandbook/design/frontend-guidelines/">      Frontend guidelines
 </a>  </ul>
 </div>
 
@@ -319,7 +318,7 @@
   <h1 class="page-title">Alerts</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Inform the user in a meaningful and constrictive way.
   </p>
 
   <h3>Contents</h3>
@@ -340,21 +339,42 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Errors messages provide a descriptive list of instructions for the user
+    to solve a problem detected by the system.
   </p>
 
+  <blockquote>
+    Try to keep the variations of alerts as low as possible. You want the user
+    the recognize a system message immediately, without too much cognitive load.
+  </blockquote>
+
   <div class="sandbox">
-    <div class="alert alert-danger">
+    <div class="alert alert-danger has-margin-bottom">
       <ul>
         <li>Complete your question in the quiz</li>
         <li>The certificate name can't be blank</li>
       </ul>
     </div>
+    <div class="alert alert-warning has-margin-bottom">
+      No courses yet, <a href="#">create one</a>.
+    </div>
+    <div class="alert alert-success">
+      Settings saved successfully.
+    </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span><span class="nt">&gt;</span>
+    Settings saved successfully.
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Complete your question in the quiz<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>The certificate name can't be blank<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span><span class="nt">&gt;</span>
+    No courses yet, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>create one<span class="nt">&lt;/a&gt;</span>.
+  <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
   <h3 class="anchor-container">
@@ -366,7 +386,8 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    For some specific use cases you may want to add a call to action to your alert.
+    This pattern will be deprecated in a future update, so it's not adviced to rely on it.
   </p>
 
   <div class="sandbox">
@@ -381,9 +402,16 @@
     </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning has-button clearfix"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Last updated at September 13 2015, 11:33:16am.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-right text-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-refresh"</span><span class="nt">&gt;&lt;/span&gt;</span>Update data
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 

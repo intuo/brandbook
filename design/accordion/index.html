@@ -260,8 +260,7 @@
       <div class="col-sm-9">
         <div class="header-navigation">
           <ul>
-            <li><a class="" href="/brandbook/vision/">Vision</a></li>
-            <li><a class="active" href="/brandbook/design/getting-started/">Design</a></li>
+            <li><a class="active" href="/brandbook/design/voice-and-tone/">Design</a></li>
             <li><a class="" href="/brandbook/roadmap/">Roadmap</a></li>
           </ul>
         </div>
@@ -278,9 +277,9 @@
             <div class="panel panel-default panel-docs">
   <h5>General</h5>
   <ul class="list-group">
-<a class="list-group-item" href="/brandbook/design/getting-started/">      Getting started
-</a><a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
+<a class="list-group-item" href="/brandbook/design/voice-and-tone/">      Voice and tone
 </a><a class="list-group-item" href="/brandbook/design/branding-colors/">      Branding colors
+</a><a class="list-group-item" href="/brandbook/design/frontend-guidelines/">      Frontend guidelines
 </a>  </ul>
 </div>
 
@@ -319,7 +318,7 @@
   <h1 class="page-title">Accordion</h1>
 
   <p class="page-description">
-    Style individual form controls and utilize common layouts.
+    Show/hide operation of multiple sections in a list.
   </p>
 
   <h3>Contents</h3>
@@ -339,7 +338,7 @@
   <hr>
 
   <p>
-    Lorem ipsum
+    Accordions are used to reveal detailed information of a list item.
   </p>
 
   <div class="sandbox">
@@ -395,9 +394,56 @@
     </div>
   </div>
 
-<pre class="highlight ruby"><code>  <span class="k">def</span> <span class="nf">my_cool_method</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="n">message</span>
-  <span class="k">end</span>
+<pre class="highlight html"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h6&gt;</span>Stage 1<span class="nt">&lt;/h6&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-heading"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12"</span><span class="nt">&gt;</span>
+            Affiliate network navigation
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-title"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-meta"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"arrow is-closed ion-android-arrow-dropright"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"arrow is-open ion-android-arrow-dropdown"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon ion-ios-videocam"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>The affiliate marketer profile<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"value"</span><span class="nt">&gt;</span>100<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>Plays<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"value"</span><span class="nt">&gt;</span>100<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>Watched<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"value"</span><span class="nt">&gt;</span>100<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>Engagement<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"accordion-content"</span><span class="nt">&gt;</span>
+          accordion content
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
