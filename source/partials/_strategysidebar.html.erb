@@ -1,0 +1,30 @@
+<div class="panel panel-default panel-docs">
+  <h5>6 Crucial Questions</h5>
+  <ul class="list-group">
+    <% link_to "/strategy/why.html",
+      class: current_page.data.strategy == "why" ? "list-group-item active" : "list-group-item" do %>
+      Why do we exist?
+    <% end %>
+    <% link_to "/strategy/serve.html",
+      class: current_page.data.strategy == "serve" ? "list-group-item active" : "list-group-item" do %>
+      Who do we serve?
+    <% end %>
+    <% link_to "/strategy/how.html",
+      class: current_page.data.strategy == "how" ? "list-group-item active" : "list-group-item" do %>
+      How do we do it? 
+    <% end %>
+    <% link_to "/strategy/what.html",
+      class: current_page.data.strategy == "what" ? "list-group-item active" : "list-group-item" do %>
+      What do we do?
+    <% end %>
+    <% link_to "/strategy/behave.html",
+      class: current_page.data.strategy == "behave" ? "list-group-item active" : "list-group-item" do %>
+      How do we behave?
+    <% end %>
+    <% link_to "/strategy/succeed.html",
+      class: current_page.data.strategy == "succeed" ? "list-group-item active" : "list-group-item" do %>
+      How do we succeed?
+    <% end %>
+  </ul>
+</div>
+
