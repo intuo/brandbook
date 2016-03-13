@@ -22,6 +22,7 @@
       <div class="col-sm-8">
         <div class="header-navigation">
           <ul>
+            <li><%= link_to "Why", "/strategy/why.html", class: current_page.data.active == "strategy" ? "active" : "" %></li>
             <li><%= link_to "Design", "/design/voice-and-tone.html", class: current_page.data.active == "docs" ? "active" : "" %></li>
             <li><%= link_to "Roadmap", "/roadmap.html", class: current_page.data.active == "roadmap" ? "active" : "" %></li>
           </ul>
