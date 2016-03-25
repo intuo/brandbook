@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
   "directory": "_vendor"
+=======
+  "directory": "vendor/assets/bower"
+>>>>>>> ec9815918233e672bf37c5c2fb612a3edf47a7be
 }
